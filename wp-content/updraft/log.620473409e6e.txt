@@ -1,0 +1,15 @@
+0000.004 () Opened log file at time: Wed, 14 Sep 2022 12:00:01 +0000 on http://staysafe
+0000.004 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.21 WP: 6.0.2 PHP: 8.0.18 (apache2handler, Windows NT SERHAN 6.2 build 9200 (Windows 8 Professional Edition) AMD64) MySQL: 8.0.29 (max packet size=67108864) WPLANG: uk Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 1536M (used: 43.6M | 46M) multisite: N openssl: OpenSSL 1.1.1n  15 Mar 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.004 () Free space on disk containing Updraft's temporary directory: 41688.8 MB
+0000.019 () Restore setup, now closing connection and starting restore over AJAX.
+0000.003 () Opened log file at time: Wed, 14 Sep 2022 12:00:03 +0000 on http://staysafe
+0000.003 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.21 WP: 6.0.2 PHP: 8.0.18 (apache2handler, Windows NT SERHAN 6.2 build 9200 (Windows 8 Professional Edition) AMD64) MySQL: 8.0.29 (max packet size=67108864) WPLANG: uk Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 1536M (used: 41.6M | 44M) multisite: N openssl: OpenSSL 1.1.1n  15 Mar 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.003 () Free space on disk containing Updraft's temporary directory: 41688.6 MB
+0000.017 () Ensuring WP_Filesystem is setup for a restore
+0000.018 () WP_Filesystem is setup and ready for a restore
+0002.096 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms","wp_cfs_sessions","wp_cfs_values"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0002.098 () PHP event: code E_WARNING: mkdir(): File exists (line 545, W:\domains\staysafe\wp-admin\includes\class-wp-filesystem-direct.php)
+0002.100 () Error message: Existing unremoved folders from a previous restore exist (please use the "Delete Old Directories" button to delete them before trying again): W:\domains\staysafe/wp-content/updraft/plugins-old
+0002.103 () Restore failed...
+0002.103 () Error message: Existing unremoved folders from a previous restore exist (please use the "Delete Old Directories" button to delete them before trying again): W:\domains\staysafe/wp-content/updraft/plugins-old
+0002.103 () Restore failed

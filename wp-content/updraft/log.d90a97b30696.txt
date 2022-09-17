@@ -1,0 +1,128 @@
+0000.005 () Opened log file at time: Fri, 16 Sep 2022 22:03:48 +0000 on http://staysafe
+0000.006 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.21 WP: 6.0.2 PHP: 8.0.18 (apache2handler, Windows NT SERHAN 6.2 build 9200 (Windows 8 Professional Edition) AMD64) MySQL: 8.0.29 (max packet size=67108864) WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 1536M (used: 47.6M | 50M) multisite: N openssl: OpenSSL 1.1.1n  15 Mar 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.006 () Free space on disk containing Updraft's temporary directory: 42398 MB
+0000.024 () Restore setup, now closing connection and starting restore over AJAX.
+0000.004 () Opened log file at time: Fri, 16 Sep 2022 22:03:50 +0000 on http://staysafe
+0000.004 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.21 WP: 6.0.2 PHP: 8.0.18 (apache2handler, Windows NT SERHAN 6.2 build 9200 (Windows 8 Professional Edition) AMD64) MySQL: 8.0.29 (max packet size=67108864) WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 1536M (used: 38.8M | 46M) multisite: N openssl: OpenSSL 1.1.1n  15 Mar 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.004 () Free space on disk containing Updraft's temporary directory: 42397.9 MB
+0000.018 () Ensuring WP_Filesystem is setup for a restore
+0000.019 () WP_Filesystem is setup and ready for a restore
+0002.103 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms","wp_cfs_sessions","wp_cfs_values"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0002.105 () PHP event: code E_WARNING: mkdir(): File exists (line 545, W:\domains\staysafe\wp-admin\includes\class-wp-filesystem-direct.php)
+0002.113 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0002.115 () Entity: db
+0002.115 () restore_backup(backup_file=backup_2022-09-17-0024_StaySafe_4d3893d7a83e-db.gz, type=db, info=a:0:{}, last_one=)
+0002.115 () Unpacking backup... (backup_2022-09-17-0024_StaySafe_4d3893d7a83e-db.gz, 0.5 Mb)
+0002.115 () PHP event: code E_WARNING: mkdir(): File exists (line 545, W:\domains\staysafe\wp-admin\includes\class-wp-filesystem-direct.php)
+0002.117 () Database successfully unpacked
+0002.117 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0002.117 () Using direct MySQL access; value of use_mysqli is: 1
+0002.118 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0002.151 () Max packet size: 64 MB
+0002.151 () Entering maintenance mode
+0002.151 () Enabling Maintenance mode&#8230;
+0002.165 () Backup of: http://staysafe
+0002.165 () Content URL: http://staysafe/wp-content
+0002.165 () Uploads URL: http://staysafe/wp-content/uploads
+0002.165 () Old table prefix: wp_
+0002.165 () Site information: multisite=0
+0002.165 () Site information: sql_mode=NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0002.167 () New table prefix: 9l_
+0002.169 () Processing table (InnoDB): wp_options - will restore as: 9l_options
+0002.247 () Atomic restore: dropping original table (wp_options)
+0002.254 () Atomic restore: renaming new table (9l_options) to final table name (wp_options)
+0002.372 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0002.388 () Processing table (InnoDB): wp_users - will restore as: 9l_users
+0002.408 () Atomic restore: dropping original table (wp_users)
+0002.413 () Atomic restore: renaming new table (9l_users) to final table name (wp_users)
+0002.420 () Processing table (InnoDB): wp_usermeta - will restore as: 9l_usermeta
+0002.437 () Atomic restore: dropping original table (wp_usermeta)
+0002.442 () Atomic restore: renaming new table (9l_usermeta) to final table name (wp_usermeta)
+0002.449 () Processing table (InnoDB): wp_commentmeta - will restore as: 9l_commentmeta
+0002.463 () Atomic restore: dropping original table (wp_commentmeta)
+0002.469 () Atomic restore: renaming new table (9l_commentmeta) to final table name (wp_commentmeta)
+0002.476 () Processing table (InnoDB): wp_comments - will restore as: 9l_comments
+0002.500 () Atomic restore: dropping original table (wp_comments)
+0002.506 () Atomic restore: renaming new table (9l_comments) to final table name (wp_comments)
+0002.513 () Processing table (InnoDB): wp_links - will restore as: 9l_links
+0002.528 () Atomic restore: dropping original table (wp_links)
+0002.533 () Atomic restore: renaming new table (9l_links) to final table name (wp_links)
+0002.540 () Processing table (InnoDB): wp_postmeta - will restore as: 9l_postmeta
+0002.732 () Atomic restore: dropping original table (wp_postmeta)
+0002.742 () Atomic restore: renaming new table (9l_postmeta) to final table name (wp_postmeta)
+0002.749 () Processing table (InnoDB): wp_posts - will restore as: 9l_posts
+0002.784 () Atomic restore: dropping original table (wp_posts)
+0002.792 () Atomic restore: renaming new table (9l_posts) to final table name (wp_posts)
+0002.800 () Processing table (InnoDB): wp_term_relationships - will restore as: 9l_term_relationships
+0002.815 () Atomic restore: dropping original table (wp_term_relationships)
+0002.824 () Atomic restore: renaming new table (9l_term_relationships) to final table name (wp_term_relationships)
+0002.831 () Processing table (InnoDB): wp_term_taxonomy - will restore as: 9l_term_taxonomy
+0002.849 () Atomic restore: dropping original table (wp_term_taxonomy)
+0002.854 () Atomic restore: renaming new table (9l_term_taxonomy) to final table name (wp_term_taxonomy)
+0002.861 () Processing table (InnoDB): wp_termmeta - will restore as: 9l_termmeta
+0002.875 () Atomic restore: dropping original table (wp_termmeta)
+0002.880 () Atomic restore: renaming new table (9l_termmeta) to final table name (wp_termmeta)
+0002.886 () Processing table (InnoDB): wp_terms - will restore as: 9l_terms
+0002.902 () Atomic restore: dropping original table (wp_terms)
+0002.907 () Atomic restore: renaming new table (9l_terms) to final table name (wp_terms)
+0002.913 () Processing table (InnoDB): wp_cfs_sessions - will restore as: 9l_cfs_sessions
+0002.925 () Atomic restore: dropping original table (wp_cfs_sessions)
+0002.931 () Atomic restore: renaming new table (9l_cfs_sessions) to final table name (wp_cfs_sessions)
+0002.937 () Processing table (InnoDB): wp_cfs_values - will restore as: 9l_cfs_values
+0002.951 () Database queries processed: 50 in 0.83 seconds
+0002.969 () Unlocking database and leaving maintenance mode
+0002.969 () Disabling Maintenance mode&#8230;
+0002.969 () Atomic restore: dropping original table (wp_cfs_values)
+0002.977 () Atomic restore: renaming new table (9l_cfs_values) to final table name (wp_cfs_values)
+0002.983 () Finished: lines processed: 50 in 0.86 seconds
+0002.984 () Cleaning up rubbish...
+0002.992 () Entity: plugins
+0002.992 () restore_backup(backup_file=backup_2022-09-17-0024_StaySafe_4d3893d7a83e-plugins.zip, type=plugins, info=a:3:{s:4:"path";s:38:"W:\domains\staysafe/wp-content/plugins";s:11:"description";s:7:"Plugins";s:20:"singular_description";s:6:"Plugin";}, last_one=)
+0002.992 () Unpacking backup... (backup_2022-09-17-0024_StaySafe_4d3893d7a83e-plugins.zip, 8.7 MB)
+0002.998 () Unzipping backup_2022-09-17-0024_StaySafe_4d3893d7a83e-plugins.zip to W:/domains/staysafe/wp-content/upgrade/883a4265/ using UpdraftPlus_ZipArchive, starting index 0
+0003.337 () Unzip progress: 1002 out of 2532 files (3.1 MB, plugins/polylang/settings/flags.php)
+0003.809 () Unzip progress: 2003 out of 2532 files (25.4 MB, plugins/updraftplus/vendor/guzzle/guzzle/src/Guzzle/Service/Command/Factory/ServiceDescriptionFactory.php)
+0004.026 () Unzip progress: 2532 out of 2532 files (28.7 MB, plugins/updraftplus/vendor/team-updraft/common-libs/src/updraft-tasks/class-updraft-tasks-activation.php)
+0004.028 () Moving old data: filesystem method / updraft_dir is potentially possible
+0004.028 () Moving old data: can potentially use wp_filesystem method / -old
+0004.028 () Moving old data out of the way...
+0004.413 () Top-level entities being moved: cf7-grid-layout, cf7-polylang, contact-form-7, custom-field-suite, duplicate-page, index.php, polylang, updraftplus
+0004.420 () Moving unpacked backup into place...
+0004.712 () Top-level entities being moved: contact-form-7, custom-field-suite, duplicate-page, index.php, polylang, updraftplus
+0004.717 () Cleaning up rubbish...
+0004.721 () Entity: themes
+0004.721 () restore_backup(backup_file=backup_2022-09-17-0024_StaySafe_4d3893d7a83e-themes.zip, type=themes, info=a:3:{s:4:"path";s:37:"W:\domains\staysafe/wp-content/themes";s:11:"description";s:6:"Themes";s:20:"singular_description";s:5:"Theme";}, last_one=)
+0004.721 () Unpacking backup... (backup_2022-09-17-0024_StaySafe_4d3893d7a83e-themes.zip, 21.1 MB)
+0004.722 () Unzipping backup_2022-09-17-0024_StaySafe_4d3893d7a83e-themes.zip to W:/domains/staysafe/wp-content/upgrade/b3cb8b8d/ using UpdraftPlus_ZipArchive, starting index 0
+0005.123 () Unzip progress: 1002 out of 1285 files (22.9 MB, themes/twentytwentyone/assets/sass/03-generic/breakpoints.scss)
+0005.243 () Unzip progress: 1285 out of 1285 files (30.4 MB, themes/twentytwentytwo/theme.json)
+0005.245 () Moving old data: filesystem method / updraft_dir is potentially possible
+0005.245 () Moving old data: can potentially use wp_filesystem method / -old
+0005.245 () Moving old data out of the way...
+0005.409 () Top-level entities being moved: index.php, Staysafe, twentytwenty, twentytwentyone, twentytwentytwo
+0005.410 () PHP event: code E_WARNING: rename(W:\domains\staysafe/wp-content/themes/Staysafe,W:\domains\staysafe/wp-content/updraft/themes-old/Staysafe): Процесс не может получить доступ к файлу, так как этот файл занят другим процессом (code: 32) (line 4524, W:\domains\staysafe\wp-content\plugins\updraftplus\restorer.php)
+0005.410 () Error message: Could not move the files into place. Check your file permissions.
+0005.410 () Error data (move_failed): W:\domains\staysafe/wp-content/themes/Staysafe -> W:\domains\staysafe/wp-content/updraft/themes-old/Staysafe
+0005.410 () themes: W:/domains/staysafe/wp-content/themes: deleting contents (as attempts to copy failed)
+0005.781 () PHP event: code E_WARNING: rmdir(W:/domains/staysafe/wp-content/themes/Staysafe/): Resource temporarily unavailable (line 390, W:\domains\staysafe\wp-admin\includes\class-wp-filesystem-direct.php)
+0005.926 () Moving unpacked backup into place...
+0006.090 () Top-level entities being moved: index.php, Staysafe, twentytwenty, twentytwentyone, twentytwentytwo
+0006.097 () Cleaning up rubbish...
+0006.100 () Entity: uploads
+0006.100 () restore_backup(backup_file=backup_2022-09-17-0024_StaySafe_4d3893d7a83e-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:38:"W:\domains\staysafe/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0006.101 () Unpacking backup... (backup_2022-09-17-0024_StaySafe_4d3893d7a83e-uploads.zip, 6.3 MB)
+0006.101 () Unzipping backup_2022-09-17-0024_StaySafe_4d3893d7a83e-uploads.zip to W:/domains/staysafe/wp-content/upgrade/48287374/ using UpdraftPlus_ZipArchive, starting index 0
+0006.133 () Unzip progress: 70 out of 70 files (6.3 MB, uploads/wpcf7_uploads/.htaccess)
+0006.134 () Moving old data: filesystem method / updraft_dir is potentially possible
+0006.135 () Moving old data: can potentially use wp_filesystem method / -old
+0006.135 () Moving old data out of the way...
+0006.142 () Moving unpacked backup into place...
+0006.151 () Cleaning up rubbish...
+0006.155 () Entity: others
+0006.155 () restore_backup(backup_file=backup_2022-09-17-0024_StaySafe_4d3893d7a83e-others.zip, type=others, info=a:2:{s:4:"path";s:30:"W:\domains\staysafe/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0006.155 () Unpacking backup... (backup_2022-09-17-0024_StaySafe_4d3893d7a83e-others.zip, 1.7 MB)
+0006.156 () Unzipping backup_2022-09-17-0024_StaySafe_4d3893d7a83e-others.zip to W:/domains/staysafe/wp-content/upgrade/799ab82e/ using UpdraftPlus_ZipArchive, starting index 0
+0006.243 () Unzip progress: 165 out of 165 files (6.7 MB, languages-old/uk.po)
+0006.274 () Cleaning up rubbish...
+0006.293 () Restore successful!
+0006.293 () Restore successful
