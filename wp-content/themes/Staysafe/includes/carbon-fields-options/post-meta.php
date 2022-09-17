@@ -124,13 +124,13 @@ Container::make( 'post_meta', __( 'Home page redactor' ) )
             ->set_help_text( 'Title at right side of Contact us section' ),
             Field::make( 'text', 'contact_phone'.carbon_lang_prefix(), 'Phone-label text' )
             ->set_width(33)
-            ->set_help_text( 'Phone label at right side of Contact us section and at Footer' ),
+            ->set_help_text( 'Phone label at right side of Contact us section' ),
             Field::make( 'text', 'contact_email'.carbon_lang_prefix(), 'Email-label text' )
             ->set_width(33)
             ->set_help_text( 'Email label at right side of Contact us section' ),
             Field::make( 'text', 'contact_address'.carbon_lang_prefix(), 'Address-label text' )
             ->set_width(33)
-            ->set_help_text( 'Address label at right side of Contact us section and at Footer' ),
+            ->set_help_text( 'Address label at right side of Contact us section' ),
             Field::make( 'textarea', 'contact_payment'.carbon_lang_prefix(), 'Payment details' )
             ->set_width(60)
             ->set_help_text( 'Payment details at right side of Contact us section (Do not delete "br" tag - this is a line breaker)' ),
@@ -209,23 +209,74 @@ Container::make( 'post_meta', __( 'Home page redactor' ) )
         );
 
         
-        Container::make( 'post_meta', __( 'What we do redactor' ) )
-        ->show_on_template('templates/what-we-do.php')
+Container::make( 'post_meta', __( 'What we do redactor' ) )
+->show_on_template('templates/what-we-do.php')
         
-                ->add_tab('Main screen', array(
-                    Field::make( 'text', 'what_main_subtitle'.carbon_lang_prefix(), 'Subtitle' )
-                    ->set_width(50)
-                    ->set_help_text( 'Subtitle at main screen' ),
-                    Field::make( 'text', 'what_main_title'.carbon_lang_prefix(), 'Title' )
-                    ->set_width(50)
-                    ->set_help_text( 'Title at main screen' ),
-                    Field::make( 'textarea', 'what_main_text_01'.carbon_lang_prefix(), 'First text' )
-                    ->set_width(50)
-                    ->set_help_text( 'Here you can edit first text at main screen' ),
-                    Field::make( 'textarea', 'what_main_text_02'.carbon_lang_prefix(), 'Second text' )
-                    ->set_width(50)
-                    ->set_help_text( 'Here you can edit second text at main screen' ),
-                    Field::make( 'image', 'what_main_img', 'Image' )
-                    ->set_help_text( 'Image at main screen' ),
-                    ) 
-                );
+        ->add_tab('Main screen', array(
+            Field::make( 'text', 'what_main_subtitle'.carbon_lang_prefix(), 'Subtitle' )
+            ->set_width(50)
+            ->set_help_text( 'Subtitle at main screen' ),
+            Field::make( 'text', 'what_main_title'.carbon_lang_prefix(), 'Title' )
+            ->set_width(50)
+            ->set_help_text( 'Title at main screen' ),
+            Field::make( 'textarea', 'what_main_text_01'.carbon_lang_prefix(), 'First text' )
+            ->set_width(50)
+            ->set_help_text( 'Here you can edit first text at main screen' ),
+            Field::make( 'textarea', 'what_main_text_02'.carbon_lang_prefix(), 'Second text' )
+            ->set_width(50)
+            ->set_help_text( 'Here you can edit second text at main screen' ),
+            Field::make( 'image', 'what_main_img', 'Image' )
+            ->set_help_text( 'Image at main screen' ),
+            ) 
+        )
+        ->add_tab('Latest news', array(
+            Field::make( 'text', 'latest_news_title'.carbon_lang_prefix(), 'Title' )
+            ->set_help_text( 'Title at Latest news section' ),
+            Field::make( 'complex', 'news_items'.carbon_lang_prefix(), __( 'News' ) )
+            ->set_help_text( 'Here you can add, remove and edit news at Latest news section' )
+                ->setup_labels([
+                    'plural_name' => 'news',
+                    'singular_name' => 'news',
+                ])
+                ->add_fields( array(
+                Field::make( 'image', 'news_img'.carbon_lang_prefix(), __( 'News image' ) )
+                ->set_help_text( 'Image at the news' )
+                ->set_width(33),
+                Field::make( 'text', 'news_title'.carbon_lang_prefix(), __( 'News title' ) )
+                ->set_help_text( 'Title of the news' )
+                ->set_width(33),
+                Field::make( 'textarea', 'news_text'.carbon_lang_prefix(), __( 'News text' ) )
+                ->set_help_text( 'Text at the news' )
+                ->set_width(33),
+                ) ),
+            ) 
+        )
+        ->add_tab('How can you help?', array(
+            Field::make( 'text', 'help_title'.carbon_lang_prefix(), 'Title' )
+            ->set_width(33)
+            ->set_help_text( 'Title at How can you help section' ),
+            Field::make( 'textarea', 'help_text'.carbon_lang_prefix(), 'Text' )
+            ->set_width(33)
+            ->set_help_text( 'Text at How can you help section (Do not delete "br" tag - this is a line breaker)' ),
+            Field::make( 'text', 'help_btn'.carbon_lang_prefix(), 'Second button text' )
+            ->set_width(33)
+            ->set_help_text( 'Text of the second button at How can you help section' ),
+            ) 
+        )
+        ->add_tab('Photos', array(
+            Field::make( 'text', 'photos_title'.carbon_lang_prefix(), 'Title' )
+            ->set_help_text( 'Title at Photos section' ),
+            Field::make( 'complex', 'photos_items'.carbon_lang_prefix(), __( 'Photos items' ) )
+            ->set_help_text( 'Here you can add, remove and edit items at Photos section' )
+                ->setup_labels([
+                    'plural_name' => 'item',
+                    'singular_name' => 'item',
+                ])
+                ->add_fields( array(
+                Field::make( 'image', 'photos_image'.carbon_lang_prefix(), __( 'Item image' ) )
+                ->set_width(50),
+                Field::make( 'textarea', 'photos_text'.carbon_lang_prefix(), __( 'Item text' ) )
+                ->set_width(50),
+                ) ),
+            ) 
+        );

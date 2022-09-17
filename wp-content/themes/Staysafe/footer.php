@@ -28,19 +28,19 @@
 				?>
 					<ul class="footer-body-contacts">
 						<li class="footer-body-contacts__item">
-							<p class="footer-body-contacts__text"><?php echo carbon_get_post_meta( $page_id, 'contact_phone'.carbon_lang_prefix()); ?></p>
+							<p class="footer-body-contacts__text"><?php echo carbon_get_theme_option('footer_phone_label'.carbon_lang_prefix()) ?></p>
 							<a href="tel:<?php echo $GLOBALS['stay_safe']['phone_digits']; ?>" class="footer-body-contacts__link"><?php echo $GLOBALS['stay_safe']['phone']; ?></a>
 						</li>
 						<?php if ($GLOBALS['stay_safe']['email']) : ?>
 						<li class="footer-body-contacts__item">
-							<p class="footer-body-contacts__text"><?php echo carbon_get_post_meta( $page_id, 'contact_email'.carbon_lang_prefix()); ?></p>
+							<p class="footer-body-contacts__text">EMAIL</p>
 							<a href="mailto:<?php echo $GLOBALS['stay_safe']['email']; ?>" class="footer-body-contacts__link"><?php echo $GLOBALS['stay_safe']['email']; ?></a>
 						</li>
 						<?php endif; ?>
 					</ul>
 					<?php if ($GLOBALS['stay_safe']['address_text']) : ?>
 					<div class="footer-body-address">
-						<p class="footer-body-address__text"><?php echo carbon_get_post_meta( $page_id, 'contact_address'.carbon_lang_prefix()); ?></p>
+						<p class="footer-body-address__text"><?php echo carbon_get_theme_option('footer_address_label'.carbon_lang_prefix()) ?></p>
 						<a href="<?php echo $GLOBALS['stay_safe']['address_link']; ?>" target="_blank" class="footer-body-address__link"><?php echo $GLOBALS['stay_safe']['address_text']; ?></a>
 					</div>
 					<?php endif; ?>
@@ -97,6 +97,15 @@
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close">Закрыть</button>
 				<div class="popup__text">Я 3 попап
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-form" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">Я 4 попап
 				</div>
 			</div>
 		</div>

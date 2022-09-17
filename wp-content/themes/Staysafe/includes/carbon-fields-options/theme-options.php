@@ -33,6 +33,12 @@ Container::make( 'theme_options', __( 'Website settings' ) )
             Field::make( 'text', 'donate', 'Link of "Donate now" buttons' )
             ->set_width(50)
             ->set_help_text( 'Put here link for all "Donate now" buttons' ),
+            Field::make( 'text', 'footer_phone_label'.carbon_lang_prefix(), 'Footer phone label' )
+            ->set_width(50)
+            ->set_help_text( 'Label of phone number at footer' ),
+            Field::make( 'text', 'footer_address_label'.carbon_lang_prefix(), 'Footer address label' )
+            ->set_width(50)
+            ->set_help_text( 'Label of address at footer' ),
             Field::make( 'text', 'copy', 'Copyright' )
             ->set_help_text( 'Copyright text at foooter' ),
         ) 

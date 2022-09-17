@@ -3,95 +3,64 @@
 Template Name: what-we-do
 */
 ?>
+<?php $page_id = get_the_ID(); ?>
+<?php $lang_prefix = carbon_lang_prefix(); ?>
 <?php get_header() ?>
 		<main class="page">
 			<section class="impact">
 				<div class="impact__container">
 					<div class="impact__body">
-						<p class="impact__subtitle subtitle">Bringing relief to those who need it most</p>
-						<h1 class="impact__title title">our impact</h1>
+						<p class="impact__subtitle subtitle"><?php echo carbon_get_post_meta( $page_id, 'what_main_subtitle'.$lang_prefix); ?></p>
+						<h1 class="impact__title title"><?php echo carbon_get_post_meta( $page_id, 'what_main_title'.$lang_prefix); ?></h1>
 						<ul class="impact__list">
 							<li class="impact__item">
-								<p class="impact__text">Many villages in the eastern and southern regions of Ukraine
-									have been cut off from the rest of the country due to their dangerous location near
-									the front lines of the ongoing conflict. This means that the people living there are
-									often unable to secure access to food, hygienic products, medicine and other basic
-									items. Every week, we drive vans full of boxes of food, clothing and other supplies
-									across the country to try to meet their needs.
-								</p>
+								<p class="impact__text"><?php echo carbon_get_post_meta( $page_id, 'what_main_text_01'.$lang_prefix); ?></p>
 							</li>
 							<li class="impact__item">
-								<p class="impact__text">However, it is not just these rural communities who have been
-									adversely affected. Currently, we have located two hospitals in the regions of
-									Kharkiv and Donbas who treat civilians from nearby villages as well as soldiers who
-									have been wounded on the front lines. However, these hospitals struggle to acquire
-									the necessary medicine and basic medical supplies to treat their patients. We have
-									made it a priority to bring these items that they desperately need. Over the last
-									few months, we have been regularly delivering medicine, clothing, and even
-									ambulances to these hospitals.
-								</p>
+								<p class="impact__text"><?php echo carbon_get_post_meta( $page_id, 'what_main_text_02'.$lang_prefix); ?></p>
 							</li>
 						</ul>
 					</div>
 					<div data-da=".impact__body,991.98,2" class="impact__image">
-						<img src="img/what-we-do/01.png" alt="impact">
+						<img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'what_main_img'), 'full'); ?>" alt="impact">
 					</div>
 				</div>
 			</section>
+			<?php $news_items = carbon_get_the_post_meta('news_items'.$lang_prefix);?>
 			<section class="news">
 				<div class="news__container">
-					<h2 class="news__title title">latest news</h2>
+					<h2 class="news__title title"><?php echo carbon_get_post_meta( $page_id, 'latest_news_title'.$lang_prefix); ?></h2>
 					<div class="news__body">
+						<?php if ($news_items) : ?>
+						<?php foreach ($news_items as $news_item) : ?>
 						<div class="news-item">
 							<div class="news-item__image">
-								<img src="img/what-we-do/02.png" alt="new">
+								<img src="<?php echo wp_get_attachment_image_url( $news_item[ 'news_img'.$lang_prefix ], 'full' ); ?>" alt="new">
 							</div>
-							<div class="news-item__title">Visiting a Military Base </div>
-							<p class="news-item__text">
-								On our way to delivering medicine to a hospital in the Donbas region, we stopped at a
-								nearby military base. There, we got to meet the soldiers and see the equipment that they
-								are using!
-							</p>
+							<div class="news-item__title"><?php echo $news_item['news_title'.$lang_prefix]?></div>
+							<p class="news-item__text"><?php echo $news_item['news_text'.$lang_prefix]?></p>
 						</div>
-						<div class="news-item">
-							<div class="news-item__image">
-								<img src="img/what-we-do/03.png" alt="new">
-							</div>
-							<div class="news-item__title">Food Boxes for Temyrivka</div>
-							<p class="news-item__text">
-								We regularly bring boxes of food to the people living in the village of Temyrivka, which
-								is located in the southeastern region of Zaporizhzhia. The inhabitants of the village
-								are always grateful and relieved to see us!
-							</p>
-						</div>
-						<div class="news-item">
-							<div class="news-item__image">
-								<img src="img/what-we-do/04.png" alt="new">
-							</div>
-							<div class="news-item__title">Bringing Aid to the Front Lines</div>
-							<p class="news-item__text">
-								On our delivery trips, we sometimes stop by military bases to visit the soldiers, where
-								we hand out food and warm clothing and listen to their stories of fighting on the front
-								lines.
-							</p>
-						</div>
+						<?php endforeach; ?>
+						<?php endif; ?>
 					</div>
-					<a href="" class="news__link icon-arrow">instagram</a>
+					<?php if ($GLOBALS['stay_safe']['instagram']) : ?>
+					<a href="<?php echo $GLOBALS['stay_safe']['instagram']; ?>" target="_blank" class="news__link icon-arrow">instagram</a>
+					<?php endif; ?>
 				</div>
 			</section>
 			<section class="help">
 				<div class="help__container">
-					<h2 class="help__title title">How can you help?</h2>
-					<p class="help__text">You can help support these Ukrainian communities by donating to our
-						organization. Your contribution will help us acquire the food, clothing and medicine that are
-						very much needed at the moment. Click on the button below to find out more!
-					</p>
+					<h2 class="help__title title"><?php echo carbon_get_post_meta( $page_id, 'help_title'.$lang_prefix); ?></h2>
+					<p class="help__text"><?php echo carbon_get_post_meta( $page_id, 'help_text'.$lang_prefix); ?></p>
 					<div class="help__links">
-						<a href="" class="help__link btn">Donate now</a>
-						<button class="help__link help__link_white btn">Join to us</button>
+						<?php if ($GLOBALS['stay_safe']['donate']) : ?>
+						<a href="<?php echo $GLOBALS['stay_safe']['donate']; ?>" target="_blank" class="help__link btn"><?php echo $GLOBALS['stay_safe']['donate_text']; ?></a>
+						<?php endif; ?>
+						<button data-popup="#popup-form" class="help__link help__link_white btn"><?php echo carbon_get_post_meta( $page_id, 'help_btn'.$lang_prefix); ?></button>
 					</div>
 				</div>
 			</section>
+			<?php $photos_items = carbon_get_the_post_meta('photos_items'.$lang_prefix);?>
 			<section class="photos">
 				<div class="photos__container">
 					<h2 class="photos__title title">Photos</h2>
@@ -99,64 +68,18 @@ Template Name: what-we-do
 					<div class="photos-slider">
 						<div class="photos-slider__slider swiper">
 							<div class="photos-slider__wrapper swiper-wrapper">
+								<?php if ($photos_items) : ?>
+								<?php foreach ($photos_items as $photos_item) : ?>
 								<div class="photos-slide swiper-slide">
 									<div class="photos-slide__inner">
 										<div class="photos-slide__image">
-											<img src="img/what-we-do/05.png" alt="photo">
+											<img src="<?php echo wp_get_attachment_image_url( $photos_item[ 'photos_image'.$lang_prefix ], 'full' ); ?>" alt="photo">
 										</div>
-										<p class="photos-slide__text">
-											One of our volunteers, Dima, helps to load one of the STAY SAFE trucks with
-											supplies. He is currently checking to make sure that all of the wooden
-											pallets inside are secured and correctly organized.
-										</p>
+										<p class="photos-slide__text"><?php echo $photos_item['photos_text'.$lang_prefix]?></p>
 									</div>
 								</div>
-								<div class="photos-slide swiper-slide">
-									<div class="photos-slide__inner">
-										<div class="photos-slide__image">
-											<img src="img/what-we-do/06.png" alt="photo">
-										</div>
-										<p class="photos-slide__text">
-											Andryi and Taras hand out food boxes to villagers living in the eastern
-											region of Donbas
-										</p>
-									</div>
-								</div>
-								<div class="photos-slide swiper-slide">
-									<div class="photos-slide__inner">
-										<div class="photos-slide__image">
-											<img src="img/what-we-do/07.png" alt="photo">
-										</div>
-										<p class="photos-slide__text">
-											On one of our delivery trips during the month of July, we stopped at this
-											hospital to distribute medicine and basic medical supplies such as bandages
-										</p>
-									</div>
-								</div>
-								<div class="photos-slide swiper-slide">
-									<div class="photos-slide__inner">
-										<div class="photos-slide__image">
-											<img src="img/what-we-do/08.png" alt="photo">
-										</div>
-										<p class="photos-slide__text">
-											This is what the inside of one our delivery trucks looks like as we begin to
-											fill it with boxes of food and other forms of humanitarian aid
-										</p>
-									</div>
-								</div>
-								<div class="photos-slide swiper-slide">
-									<div class="photos-slide__inner">
-										<div class="photos-slide__image">
-											<img src="img/what-we-do/09.png" alt="photo">
-										</div>
-										<p class="photos-slide__text">
-											Thanks to the efforts of Tania Hevert and Andy and Ann Hawkins over the last
-											few months, enough funds were raised to purchase three ambulances! Here
-											pictured is everyone involved in the process of fundraising and transporting
-											these vehicles to Poland, where our team came to collect them.
-										</p>
-									</div>
-								</div>
+								<?php endforeach; ?>
+								<?php endif; ?>
 							</div>
 							<div class="photos-slider__buttons">
 								<button type="button" class="swiper-button-prev icon-arrow"></button>
