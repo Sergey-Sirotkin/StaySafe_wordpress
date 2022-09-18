@@ -3133,6 +3133,10 @@ body::after {
 
 .our-team__title {
   text-align: center;
+  background-image: url("../img/decor-03.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 23.4375rem;
 }
 
 @supports (font-size: clamp( 1.5rem , 1.152173913rem  +  1.7391304348vw , 2.5rem )) {
@@ -3173,15 +3177,15 @@ body::after {
           align-items: center;
 }
 
-@supports (gap: clamp( 3.3125rem , 2.3559782609rem  +  4.7826086957vw , 6.0625rem )) {
+@supports (gap: clamp( 3.3125rem , 2.464673913rem  +  4.2391304348vw , 5.75rem )) {
   .our-team__body {
-    gap: clamp( 3.3125rem , 2.3559782609rem  +  4.7826086957vw , 6.0625rem );
+    gap: clamp( 3.3125rem , 2.464673913rem  +  4.2391304348vw , 5.75rem );
   }
 }
 
-@supports not (gap: clamp( 3.3125rem , 2.3559782609rem  +  4.7826086957vw , 6.0625rem )) {
+@supports not (gap: clamp( 3.3125rem , 2.464673913rem  +  4.2391304348vw , 5.75rem )) {
   .our-team__body {
-    gap: calc(3.3125rem + 2.75 * (100vw - 20rem) / 57.5);
+    gap: calc(3.3125rem + 2.4375 * (100vw - 20rem) / 57.5);
   }
 }
 
@@ -4663,6 +4667,7 @@ body::after {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    text-align: right;
   }
 
   .footer-body-list li {
@@ -4858,6 +4863,10 @@ body::after {
   .how-we-help__image {
     width: 100%;
     height: 12.5rem;
+  }
+
+  .our-team__title {
+    background-size: 16.9375rem;
   }
 
   .our-team__image {

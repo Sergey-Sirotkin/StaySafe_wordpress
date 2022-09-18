@@ -71,8 +71,8 @@ Template Name: home
 					<p class="team__subtitle subtitle"><?php echo carbon_get_post_meta( $page_id, 'meet_team_subtitle'.$lang_prefix); ?></p>
 					<h2 class="team__title title"><?php echo carbon_get_post_meta( $page_id, 'meet_team_title'.$lang_prefix); ?></h2>
 					<p class="team__text"><?php echo carbon_get_post_meta( $page_id, 'meet_team_text'.$lang_prefix); ?></p>
+					<?php if ($meet_team_items) : ?>
 					<div class="team-body">
-						<?php if ($meet_team_items) : ?>
 						<?php foreach ($meet_team_items as $meet_team_item) : ?>
 						<div class="team-body__item">
 							<div class="team-body__img">
@@ -82,8 +82,8 @@ Template Name: home
 							<p class="team-body__subtitle"><?php echo $meet_team_item['meet_team_item_subtitle'.$lang_prefix]?></p>
 						</div>
 						<?php endforeach; ?>
-						<?php endif; ?>
 					</div>
+					<?php endif; ?>
 					<a href="<?php echo get_permalink(pll_get_post(185)); ?>" class="team__btn btn"><?php echo carbon_get_post_meta( $page_id, 'meet_team_btn'.$lang_prefix); ?></a>
 				</div>
 			</section>
@@ -174,10 +174,10 @@ Template Name: home
 				<div class="actions__container">
 					<h2 class="actions__title title"><?php echo carbon_get_post_meta( $page_id, 'our_actions_title'.$lang_prefix); ?></h2>
 					<p class="actions__subtitle"><?php echo carbon_get_post_meta( $page_id, 'our_actions_subtitle'.$lang_prefix); ?></p>
+					<?php if ($our_actions_items) : ?>
 					<div class="actions-slider">
 						<div class="actions-slider__slider swiper">
 							<div class="actions-slider__wrapper swiper-wrapper">
-							<?php if ($our_actions_items) : ?>
 							<?php foreach ($our_actions_items as $our_actions_item) : ?>
 								<div class="actions-slide swiper-slide">
 									<div class="actions-slide__inner">
@@ -196,7 +196,6 @@ Template Name: home
 									</div>
 								</div>
 								<?php endforeach; ?>
-								<?php endif; ?>
 							</div>
 							<div class="actions-slider__buttons">
 								<button type="button" class="swiper-button-prev icon-arrow"></button>
@@ -204,11 +203,12 @@ Template Name: home
 							</div>
 						</div>
 					</div>
+					<?php endif; ?>
 			</section>
 			<section class="reports">
 				<div class="reports__container">
 					<h2 class="reports__title title"><?php echo carbon_get_post_meta( $page_id, 'photo_reports_title'.$lang_prefix); ?></h2>
-					<p class="reports__subtitle">Click on the photo to find out more</p>
+					<p class="reports__subtitle"><?php echo carbon_get_post_meta( $page_id, 'photo_reports_subtitle'.$lang_prefix); ?></p>
 					<div class="reports__gallery">
 						<div class="reports__item">
 							<div class="reports__image">
@@ -244,19 +244,19 @@ Template Name: home
 				</div>
 			</section>
 			<?php $partners_items = carbon_get_theme_option('our_partners_items');?>
+			<?php if ($partners_items) : ?>
 			<section class="partners">
 				<div class="partners__container">
 					<div class="partners__title title"><?php echo carbon_get_theme_option('our_partners_title'.$lang_prefix) ?></div>
 					<ul class="partners__list">
-							<?php if ($partners_items) : ?>
 							<?php foreach ($partners_items as $partners_item) : ?>
 							<li class="partners__item">
 								<img src="<?php echo wp_get_attachment_image_url( $partners_item[ 'our_partners_image'], 'full' ); ?>" alt="partner">
 							</li>
 							<?php endforeach; ?>
-							<?php endif; ?>
 					</ul>
 				</div>
 			</section>
+			<?php endif; ?>
 		</main>
 <?php get_footer() ?>

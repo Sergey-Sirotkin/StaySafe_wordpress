@@ -175,6 +175,8 @@ Container::make( 'post_meta', __( 'Home page redactor' ) )
         ->add_tab('Photo reports', array(
             Field::make( 'text', 'photo_reports_title'.carbon_lang_prefix(), 'Title' )
             ->set_help_text( 'Title at Photo reports section' ),
+            Field::make( 'text', 'photo_reports_subtitle'.carbon_lang_prefix(), 'Subtitle' )
+            ->set_help_text( 'Subtitle at Photo reports section' ),
             Field::make( 'image', 'photo_reports_img_01', 'Image-01' )
             ->set_width(50)
             ->set_help_text( 'First image at Photo reports section' ),
@@ -266,6 +268,8 @@ Container::make( 'post_meta', __( 'What we do redactor' ) )
         ->add_tab('Photos', array(
             Field::make( 'text', 'photos_title'.carbon_lang_prefix(), 'Title' )
             ->set_help_text( 'Title at Photos section' ),
+            Field::make( 'text', 'photos_subtitle'.carbon_lang_prefix(), 'Subtitle' )
+            ->set_help_text( 'Subtitle at Photos section' ),
             Field::make( 'complex', 'photos_items'.carbon_lang_prefix(), __( 'Photos items' ) )
             ->set_help_text( 'Here you can add, remove and edit items at Photos section' )
                 ->setup_labels([
@@ -403,5 +407,81 @@ Container::make( 'post_meta', __( 'For businesses redactor' ) )
             Field::make( 'text', 'get_contact_step_03_text'.carbon_lang_prefix(), 'Step-03 text' )
             ->set_width(50)
             ->set_help_text( 'Text at first step at GET IN CONTACT section' ),
+            ) 
+        );
+
+Container::make( 'post_meta', __( 'Our Team redactor' ) )
+->show_on_template('templates/about.php')
+                
+        ->add_tab('Main screen', array(
+            Field::make( 'text', 'team_subtitle'.carbon_lang_prefix(), 'Subtitle' )
+            ->set_width(30)
+            ->set_help_text( 'Subtitle at main screen' ),
+            Field::make( 'text', 'team_title'.carbon_lang_prefix(), 'Title' )
+            ->set_width(30)
+            ->set_help_text( 'Title at main screen' ),
+            Field::make( 'textarea', 'team_text'.carbon_lang_prefix(), 'Text' )
+            ->set_width(40)
+            ->set_help_text( 'Here you can edit text at main screen' ),
+            Field::make( 'complex', 'team_slider'.carbon_lang_prefix(), __( 'Slider' ) )
+            ->set_help_text( 'Here you can add, remove and edit slides at main screen' )
+                ->setup_labels([
+                'plural_name' => 'slide',
+                'singular_name' => 'slide',
+                ])
+                ->add_fields( array(
+                Field::make( 'image', 'team_slide'.carbon_lang_prefix(), __( 'Slide image' ) ),
+                ) ),
+            ) 
+        )
+        
+        ->add_tab('Statistics', array(
+            Field::make( 'complex', 'statistics_items'.carbon_lang_prefix(), __( 'Items' ) )
+            ->set_help_text( 'Here you can add, remove and edit statistics items' )
+                ->setup_labels([
+                'plural_name' => 'item',
+                'singular_name' => 'item',
+                ])
+                ->add_fields( array(
+                Field::make( 'image', 'statistics_img'.carbon_lang_prefix(), __( 'Item image' ) )
+                ->set_width(20),
+                Field::make( 'text', 'statistics_title'.carbon_lang_prefix(), __( 'Item title' ) )
+                ->set_width(40),
+                Field::make( 'text', 'statistics_text'.carbon_lang_prefix(), __( 'Item text' ) )
+                ->set_width(40),
+                ) ),
+            ) 
+        )
+        
+        ->add_tab('How we help', array(
+            Field::make( 'image', 'how_help_img', 'Image' )
+            ->set_help_text( 'Image at How we help section' ),
+            Field::make( 'text', 'how_help_subtitle'.carbon_lang_prefix(), 'Subtitle' )
+            ->set_width(33)
+            ->set_help_text( 'Subtitle at How we help section' ),
+            Field::make( 'text', 'how_help_title'.carbon_lang_prefix(), 'Title' )
+            ->set_width(33)
+            ->set_help_text( 'Title at How we help section' ),
+            Field::make( 'textarea', 'how_help_text'.carbon_lang_prefix(), 'Text' )
+            ->set_width(33)
+            ->set_help_text( 'Here you can edit text at How we help section' ),
+            ) 
+        )
+        
+        ->add_tab('Our team', array(
+            Field::make( 'text', 'our_team_title'.carbon_lang_prefix(), 'Title' )
+            ->set_help_text( 'Title at Our team section' ),
+            Field::make( 'complex', 'teammates'.carbon_lang_prefix(), __( 'Teammates' ) )
+            ->set_help_text( 'Here you can add, remove and edit items at Our team section' )
+                ->setup_labels([
+                'plural_name' => 'teammate',
+                'singular_name' => 'teammate',
+                ])
+                ->add_fields( array(
+                Field::make( 'image', 'teammate_img'.carbon_lang_prefix(), __( 'Teammate photo' ) )
+                ->set_width(50),
+                Field::make( 'text', 'teammate_title'.carbon_lang_prefix(), __( 'Teammate name' ) )
+                ->set_width(50),
+                ) ),
             ) 
         );

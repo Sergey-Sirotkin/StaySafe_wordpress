@@ -30,8 +30,8 @@ Template Name: what-we-do
 			<section class="news">
 				<div class="news__container">
 					<h2 class="news__title title"><?php echo carbon_get_post_meta( $page_id, 'latest_news_title'.$lang_prefix); ?></h2>
+					<?php if ($news_items) : ?>
 					<div class="news__body">
-						<?php if ($news_items) : ?>
 						<?php foreach ($news_items as $news_item) : ?>
 						<div class="news-item">
 							<div class="news-item__image">
@@ -41,8 +41,8 @@ Template Name: what-we-do
 							<p class="news-item__text"><?php echo $news_item['news_text'.$lang_prefix]?></p>
 						</div>
 						<?php endforeach; ?>
-						<?php endif; ?>
 					</div>
+					<?php endif; ?>
 					<?php if ($GLOBALS['stay_safe']['instagram']) : ?>
 					<a href="<?php echo $GLOBALS['stay_safe']['instagram']; ?>" target="_blank" class="news__link icon-arrow">instagram</a>
 					<?php endif; ?>
@@ -61,14 +61,14 @@ Template Name: what-we-do
 				</div>
 			</section>
 			<?php $photos_items = carbon_get_the_post_meta('photos_items'.$lang_prefix);?>
+			<?php if ($photos_items) : ?>
 			<section class="photos">
 				<div class="photos__container">
-					<h2 class="photos__title title">Photos</h2>
-					<p class="photos__subtitle">Click on the photo to find out more</p>
+					<h2 class="photos__title title"><?php echo carbon_get_post_meta( $page_id, 'photos_title'.$lang_prefix); ?></h2>
+					<p class="photos__subtitle"><?php echo carbon_get_post_meta( $page_id, 'photos_subtitle'.$lang_prefix); ?></p>
 					<div class="photos-slider">
 						<div class="photos-slider__slider swiper">
 							<div class="photos-slider__wrapper swiper-wrapper">
-								<?php if ($photos_items) : ?>
 								<?php foreach ($photos_items as $photos_item) : ?>
 								<div class="photos-slide swiper-slide">
 									<div class="photos-slide__inner">
@@ -79,7 +79,6 @@ Template Name: what-we-do
 									</div>
 								</div>
 								<?php endforeach; ?>
-								<?php endif; ?>
 							</div>
 							<div class="photos-slider__buttons">
 								<button type="button" class="swiper-button-prev icon-arrow"></button>
@@ -89,5 +88,6 @@ Template Name: what-we-do
 					</div>
 				</div>
 			</section>
+			<?php endif; ?>
 		</main>
 		<?php get_footer() ?>

@@ -159,19 +159,19 @@ Template Name: business
 				</div>
 			</section>
 			<?php $partners_items = carbon_get_theme_option('our_partners_items');?>
+			<?php if ($partners_items) : ?>
 			<section class="partners">
 				<div class="partners__container">
 					<div class="partners__title title"><?php echo carbon_get_theme_option('our_partners_title'.$lang_prefix) ?></div>
 					<ul class="partners__list">
-							<?php if ($partners_items) : ?>
 							<?php foreach ($partners_items as $partners_item) : ?>
 							<li class="partners__item">
 								<img src="<?php echo wp_get_attachment_image_url( $partners_item[ 'our_partners_image'], 'full' ); ?>" alt="partner">
 							</li>
 							<?php endforeach; ?>
-							<?php endif; ?>
 					</ul>
 				</div>
 			</section>
+			<?php endif; ?>
 		</main>
 		<?php get_footer() ?>
