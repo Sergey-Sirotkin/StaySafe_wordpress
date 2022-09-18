@@ -3,119 +3,92 @@
 Template Name: business
 */
 ?>
+<?php $page_id = get_the_ID(); ?>
+<?php $lang_prefix = carbon_lang_prefix(); ?>
 <?php get_header() ?>
 		<main class="page">
 			<section class="businesses-hero">
 				<div class="businesses-hero__image">
-					<img src="img/business/bg-flag.png" alt="flag">
+					<img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'businesses_main_img'), 'full'); ?>" alt="flag">
 				</div>
 				<div class="businesses-hero__container">
-					<h1 class="businesses-hero__title title">Making a social impact that resonates with your
-						<span>customers</span>
-					</h1>
+					<h1 class="businesses-hero__title title"><?php echo carbon_get_post_meta( $page_id, 'businesses_main_title'.$lang_prefix); ?></h1>
 					<div class="businesses-hero__subtitle">
-						<p>Engage your customers and promote your brand by collaborating with us on a humanitarian
-							campaign!
-						</p>
-						<p>Read on to find out more.</p>
+						<p><?php echo carbon_get_post_meta( $page_id, 'businesses_main_text-01'.$lang_prefix); ?></p>
+						<p><?php echo carbon_get_post_meta( $page_id, 'businesses_main_text-02'.$lang_prefix); ?></p>
 					</div>
-					<button class="businesses-hero__btn btn">Join</button>
+					<button data-popup="#popup-form" class="businesses-hero__btn btn"><?php echo carbon_get_post_meta( $page_id, 'businesses_main_btn'.$lang_prefix); ?></button>
 				</div>
 			</section>
 			<section class="hire">
 				<div class="hire__container">
 					<div class="hire__image">
-						<img src="img/business/01.png" alt="logo">
+						<img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'ambassadors_img'), 'full'); ?>" alt="logo">
 					</div>
 					<div class="hire__body">
 						<div class="hire__decor">
-							<img src="img/decor-06.png" alt="decor">
+							<img src="<?php bloginfo('template_url') ?>/assets/img/decor-06.png" alt="decor">
 						</div>
-						<h2 class="hire__title">Hire Ambassadors for Humanity</h2>
-						<p class="hire__text">Our volunteers work tirelessly to bring relief to those with urgent needs.
-							Every week, they sort out donations, organize boxes of food and medical supplies and plan
-							out missions to villages and hospitals in the East.
-						</p>
-						<p class="hire__text">However, many of our volunteers also have wives and children that they
-							must support, along with monthly rents and bills to pay. This means that, in order to
-							continue serving their country, our volunteers also need a basic income.
-						</p>
-						<p class="hire__text">By “adopting” our volunteers, your company will have an incredible
-							opportunity to support the humanitarian efforts in Ukraine. It also means that you will be
-							part of a collaboration in which your company will have the following opportunities:
-						</p>
+						<h2 class="hire__title"><?php echo carbon_get_post_meta( $page_id, 'ambassadors_title'.$lang_prefix); ?></h2>
+						<p class="hire__text"><?php echo carbon_get_post_meta( $page_id, 'ambassadors_text-01'.$lang_prefix); ?></p>
+						<p class="hire__text"><?php echo carbon_get_post_meta( $page_id, 'ambassadors_text-02'.$lang_prefix); ?></p>
+						<p class="hire__text"><?php echo carbon_get_post_meta( $page_id, 'ambassadors_text-03'.$lang_prefix); ?></p>
+						<?php $hire_items = carbon_get_the_post_meta('ambassadors_list'.$lang_prefix);?>
+						<?php if ($hire_items) : ?>
 						<ul class="hire__list">
+							<?php foreach ($hire_items as $hire_item) : ?>	
 							<li class="hire__item">
-								<p class="hire__text hire__text_list">Building emotional bonds with your customers</p>
+								<p class="hire__text hire__text_list"><?php echo $hire_item['ambassadors_list_item'.$lang_prefix]?></p>
 							</li>
-							<li class="hire__item">
-								<p class="hire__text hire__text_list">Boosting your employer branding </p>
-							</li>
-							<li class="hire__item">
-								<p class="hire__text hire__text_list">Amplify the human-centric narrative for your brand</p>
-							</li>
+							<?php endforeach; ?>
 						</ul>
-						<p class="hire__text hire__text_bold">Please reach out to us for more information about how we
-							can make this happen!</p>
+						<?php endif; ?>
+						<p class="hire__text hire__text_bold"><?php echo carbon_get_post_meta( $page_id, 'ambassadors_text-04'.$lang_prefix); ?></p>
 					</div>
 				</div>
 			</section>
 			<section class="boxes">
 				<div class="boxes__container">
 					<div data-da=".boxes__body,767.98,1" class="boxes__image">
-						<img src="img/business/02.png" alt="box">
+						<img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'boxes_img'), 'full'); ?>" alt="box">
 					</div>
 					<div class="boxes__body">
-						<h2 class="boxes__title">100 BOXES</h2>
-						<p class="boxes__text">When you donate 3000 euros, we can create 100 boxes of food -
-							specifically branded for your company! One box contains high nutrition and long lasting
-							food, such as pasta and beans, as well as basic hygiene products.
-						</p>
-						<p class="boxes__text">You will get exclusive photo and video content from this action, along
-							with the copywrites, to use for advertising purposes or whatever else you wish!
-						</p>
-						<a href="" class="boxes__btn btn">Donate</a>
+						<h2 class="boxes__title"><?php echo carbon_get_post_meta( $page_id, 'boxes_title'.$lang_prefix); ?></h2>
+						<p class="boxes__text"><?php echo carbon_get_post_meta( $page_id, 'boxes_text-01'.$lang_prefix); ?></p>
+						<p class="boxes__text"><?php echo carbon_get_post_meta( $page_id, 'boxes_text-02'.$lang_prefix); ?></p>
+						<?php if ($GLOBALS['stay_safe']['donate']) : ?>
+						<a href="<?php echo $GLOBALS['stay_safe']['donate']; ?>" target="_blank" class="boxes__btn btn"><?php echo $GLOBALS['stay_safe']['donate_text']; ?></a>
+						<?php endif; ?>
 					</div>
 				</div>
 			</section>
 			<section class="do-well">
 				<div class="do-well__container">
-					<h2 class="do-well__title">Do well by doing good</h2>
+					<h2 class="do-well__title"><?php echo carbon_get_post_meta( $page_id, 'well_title'.$lang_prefix); ?></h2>
 					<div class="do-well__inner">
 						<div class="do-well__decor do-well__decor_desktop">
-							<img src="img/business/decor-01.png" alt="decor">
+							<img src="<?php bloginfo('template_url') ?>/assets/img/business/b-decor-01.png" alt="decor">
 						</div>
 						<div class="do-well__decor do-well__decor_mobile">
-							<img src="img/business/decor-03.png" alt="decor">
+							<img src="<?php bloginfo('template_url') ?>/assets/img/business/b-decor-03.png" alt="decor">
 						</div>
 						<div class="do-well-body">
 							<div class="do-well-body__item">
 								<div class="do-well-body__item-inner">
-									<h4 class="do-well-body__title">Donating your product</h4>
-									<p class="do-well-body__text">Food, cosmetics, hygiene, baby products, shoes, cotton
-										pyjamas, power generators, insect repellent – the list of items that are needed
-										in
-										Ukraine right now goes on and on! Consider sending us a shipment of your
-										company’s
-										product, which will be used in refugee centers, hospitals and many other places.
-										Help us support the Ukrainian people!
-									</p>
+									<h4 class="do-well-body__title"><?php echo carbon_get_post_meta( $page_id, 'well_item_title_01'.$lang_prefix); ?></h4>
+									<p class="do-well-body__text"><?php echo carbon_get_post_meta( $page_id, 'well_item_text_01'.$lang_prefix); ?></p>
 								</div>
 								<div class="do-well-body__image">
-									<img src="img/business/03.png" alt="do-well-image">
+									<img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'well_item_img_01'), 'full'); ?>" alt="do-well-image">
 								</div>
 							</div>
 							<div class="do-well-body__item">
 								<div class="do-well-body__item-inner">
-									<h4 class="do-well-body__title">Humanitarian Campaign</h4>
-									<p class="do-well-body__text">Is your brand famous for outstanding marketing
-										campaigns? Why not create one with us based on humanitarian aid work? Contact us
-										today, and let’s work together to design and implement a unique humanitarian
-										campaign between your company and our organization!
-									</p>
+									<h4 class="do-well-body__title"><?php echo carbon_get_post_meta( $page_id, 'well_item_title_02'.$lang_prefix); ?></h4>
+									<p class="do-well-body__text"><?php echo carbon_get_post_meta( $page_id, 'well_item_text_02'.$lang_prefix); ?></p>
 								</div>
 								<div class="do-well-body__image">
-									<img src="img/business/04.png" alt="do-well-image">
+									<img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'well_item_img_02'), 'full'); ?>" alt="do-well-image">
 								</div>
 							</div>
 						</div>
@@ -125,35 +98,29 @@ Template Name: business
 			<section class="get-contact">
 				<div class="get-contact__container">
 					<div class="get-contact__body">
-						<h2 class="get-contact__title title">Get in Contact!</h2>
-						<p class="get-contact__text">We would love to hear from you! Please reach out to us if you have
-							any questions, such as how to send us a shipment of donations, or if you would like more
-							information about the work we do. We would also appreciate it if you requested our
-							permission before using any of the photos and videos from our website or Instagram account.
-						</p>
+						<h2 class="get-contact__title title"><?php echo carbon_get_post_meta( $page_id, 'get_contact_title'.$lang_prefix); ?></h2>
+						<p class="get-contact__text"><?php echo carbon_get_post_meta( $page_id, 'get_contact_text'.$lang_prefix); ?></p>
 						<ul class="get-contact__list">
 							<li class="get-contact-item">
 								<span>1</span>
-								<p class="get-contact-item__title">fill the form</p>
-								<p class="get-contact-item__text">List out your name, email address and message to us</p>
+								<p class="get-contact-item__title"><?php echo carbon_get_post_meta( $page_id, 'get_contact_step_01_title'.$lang_prefix); ?></p>
+								<p class="get-contact-item__text"><?php echo carbon_get_post_meta( $page_id, 'get_contact_step_01_text'.$lang_prefix); ?></p>
 							</li>
 							<li class="get-contact-item">
 								<span>2</span>
-								<p class="get-contact-item__title">together we discuss</p>
-								<p class="get-contact-item__text">One of our representatives will reach out to you to
-									answer your question or arrange a time for a longer discussion
-								</p>
+								<p class="get-contact-item__title"><?php echo carbon_get_post_meta( $page_id, 'get_contact_step_02_title'.$lang_prefix); ?></p>
+								<p class="get-contact-item__text"><?php echo carbon_get_post_meta( $page_id, 'get_contact_step_02_text'.$lang_prefix); ?></p>
 							</li>
 							<li class="get-contact-item">
 								<span>3</span>
-								<p class="get-contact-item__title">Lets start</p>
-								<p class="get-contact-item__text">By working together, we can help so many more people!</p>
+								<p class="get-contact-item__title"><?php echo carbon_get_post_meta( $page_id, 'get_contact_step_03_title'.$lang_prefix); ?></p>
+								<p class="get-contact-item__text"><?php echo carbon_get_post_meta( $page_id, 'get_contact_step_03_text'.$lang_prefix); ?></p>
 							</li>
 						</ul>
 					</div>
 					<div class="get-contact__form">
 						<div class="contact-form contact-form-business">
-							<h2 class="contact-form__title title contact-form-title-business">fill the form</h2>
+							<h2 class="contact-form__title title contact-form-title-business"><?php echo carbon_get_post_meta( $page_id, 'get_contact_title_form'.$lang_prefix); ?></h2>
 							<form class="contact-form__form" action="#">
 								<ul class="contact-form__list">
 									<li class="contact-form__item">
@@ -177,35 +144,32 @@ Template Name: business
 							</form>
 						</div>
 						<ul class="get-contact__socials">
+							<?php if ($GLOBALS['stay_safe']['facebook']) : ?>
 							<li class="get-contact__socials-item">
-								<a href="" class="get-contact__socials-link icon-facebook"></a>
+								<a href="<?php echo $GLOBALS['stay_safe']['facebook']; ?>" target="_blank" class="get-contact__socials-link icon-facebook"></a>
 							</li>
+							<?php endif; ?>
+							<?php if ($GLOBALS['stay_safe']['instagram']) : ?>
 							<li class="get-contact__socials-item">
-								<a href="" class="get-contact__socials-link icon-instagram"></a>
+								<a href="<?php echo $GLOBALS['stay_safe']['instagram']; ?>" target="_blank" class="get-contact__socials-link icon-instagram"></a>
 							</li>
+							<?php endif; ?>
 						</ul>
 					</div>
 				</div>
 			</section>
+			<?php $partners_items = carbon_get_theme_option('our_partners_items');?>
 			<section class="partners">
 				<div class="partners__container">
-					<div class="partners__title partners__title_blank title">OUR PARTNERS</div>
+					<div class="partners__title title"><?php echo carbon_get_theme_option('our_partners_title'.$lang_prefix) ?></div>
 					<ul class="partners__list">
-						<li class="partners__item">
-							<img src="img/home/15.png" alt="partner">
-						</li>
-						<li class="partners__item">
-							<img src="img/home/16.png" alt="partner">
-						</li>
-						<li class="partners__item">
-							<img src="img/home/17.png" alt="partner">
-						</li>
-						<li class="partners__item">
-							<img src="img/home/18.png" alt="partner">
-						</li>
-						<li class="partners__item">
-							<img src="img/home/19.png" alt="partner">
-						</li>
+							<?php if ($partners_items) : ?>
+							<?php foreach ($partners_items as $partners_item) : ?>
+							<li class="partners__item">
+								<img src="<?php echo wp_get_attachment_image_url( $partners_item[ 'our_partners_image'], 'full' ); ?>" alt="partner">
+							</li>
+							<?php endforeach; ?>
+							<?php endif; ?>
 					</ul>
 				</div>
 			</section>

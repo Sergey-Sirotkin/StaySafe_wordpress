@@ -280,3 +280,128 @@ Container::make( 'post_meta', __( 'What we do redactor' ) )
                 ) ),
             ) 
         );
+
+Container::make( 'post_meta', __( 'For businesses redactor' ) )
+->show_on_template('templates/business.php')
+        
+        ->add_tab('Main screen', array(
+            Field::make( 'image', 'businesses_main_img', 'Main image' )
+            ->set_width(15)
+            ->set_help_text( 'Background image at main screen' ),
+            Field::make( 'textarea', 'businesses_main_title'.carbon_lang_prefix(), 'Title' )
+            ->set_width(21)
+            ->set_help_text( 'Title at For businesses section. Text between "span" tags becomes blue and have yellow decoration on its background' ),
+            Field::make( 'textarea', 'businesses_main_text-01'.carbon_lang_prefix(), 'Text-01' )
+            ->set_width(21)
+            ->set_help_text( 'Top text at For businesses section' ),
+            Field::make( 'textarea', 'businesses_main_text-02'.carbon_lang_prefix(), 'Text-02' )
+            ->set_width(21)
+            ->set_help_text( 'Bottom text at For businesses section' ),
+            Field::make( 'text', 'businesses_main_btn'.carbon_lang_prefix(), 'Button text' )
+            ->set_width(21)
+            ->set_help_text( 'Text of the button at For businesses section' ),
+            ) 
+        )
+
+        ->add_tab('Hire Ambassadors', array(
+            Field::make( 'image', 'ambassadors_img', 'Image' )
+            ->set_width(50)
+            ->set_help_text( 'Image at Hire Ambassadors section' ),
+            Field::make( 'text', 'ambassadors_title'.carbon_lang_prefix(), 'Title' )
+            ->set_width(50)
+            ->set_help_text( 'Title at Hire Ambassadors section' ),
+            Field::make( 'textarea', 'ambassadors_text-01'.carbon_lang_prefix(), 'Text-01' )
+            ->set_width(33)
+            ->set_help_text( 'First paragraph at Hire Ambassadors section' ),
+            Field::make( 'textarea', 'ambassadors_text-02'.carbon_lang_prefix(), 'Text-02' )
+            ->set_width(33)
+            ->set_help_text( 'Second paragraph at Hire Ambassadors section' ),
+            Field::make( 'textarea', 'ambassadors_text-03'.carbon_lang_prefix(), 'Text-03' )
+            ->set_width(33)
+            ->set_help_text( 'Third paragraph at Hire Ambassadors section' ),
+            Field::make( 'complex', 'ambassadors_list'.carbon_lang_prefix(), __( 'List' ) )
+            ->set_help_text( 'Here you can add, remove and edit rows at list at Hire Ambassadors section' )
+                ->setup_labels([
+                    'plural_name' => 'row',
+                    'singular_name' => 'row',
+                ])
+                ->set_width(50)
+                ->add_fields( array(
+                Field::make( 'text', 'ambassadors_list_item'.carbon_lang_prefix(), __( 'Text of the row' ) ),
+                ) ),
+            Field::make( 'textarea', 'ambassadors_text-04'.carbon_lang_prefix(), 'Bottom text' )
+            ->set_width(50)
+            ->set_help_text( 'Text at the bottom (bold one) at Hire Ambassadors section' ),
+            ) 
+        )
+        
+        ->add_tab('Boxes', array(
+            Field::make( 'image', 'boxes_img', 'Boxes image' )
+            ->set_width(50)
+            ->set_help_text( 'Image at Boxes section' ),
+            Field::make( 'text', 'boxes_title'.carbon_lang_prefix(), 'Title' )
+            ->set_width(50)
+            ->set_help_text( 'Title at Boxes section' ),
+            Field::make( 'textarea', 'boxes_text-01'.carbon_lang_prefix(), 'Text-01' )
+            ->set_width(50)
+            ->set_help_text( 'First paragraph at boxes section' ),
+            Field::make( 'textarea', 'boxes_text-02'.carbon_lang_prefix(), 'Text-02' )
+            ->set_width(50)
+            ->set_help_text( 'Second paragraph at boxes section' ),
+            ) 
+        )
+        
+        ->add_tab('DO WELL', array(
+            Field::make( 'text', 'well_title'.carbon_lang_prefix(), 'Title' )
+            ->set_help_text( 'Title at DO WELL section' ),
+            Field::make( 'text', 'well_item_title_01'.carbon_lang_prefix(), 'Item-01 title' )
+            ->set_width(33)
+            ->set_help_text( 'Title of first item at DO WELL section' ),
+            Field::make( 'textarea', 'well_item_text_01'.carbon_lang_prefix(), 'Item-01 text' )
+            ->set_width(33)
+            ->set_help_text( 'Text at first item at DO WELL section' ),
+            Field::make( 'image', 'well_item_img_01', 'Item-01 image' )
+            ->set_width(33)
+            ->set_help_text( 'Image at first item at DO WELL section' ),
+            Field::make( 'text', 'well_item_title_02'.carbon_lang_prefix(), 'Item-02 title' )
+            ->set_width(33)
+            ->set_help_text( 'Title of first item at DO WELL section' ),
+            Field::make( 'textarea', 'well_item_text_02'.carbon_lang_prefix(), 'Item-02 text' )
+            ->set_width(33)
+            ->set_help_text( 'Text at first item at DO WELL section' ),
+            Field::make( 'image', 'well_item_img_02', 'Item-02 image' )
+            ->set_width(33)
+            ->set_help_text( 'Image at first item at DO WELL section' ),
+            ) 
+        )
+        
+        ->add_tab('GET IN CONTACT', array(
+            Field::make( 'text', 'get_contact_title'.carbon_lang_prefix(), 'Title' )
+            ->set_width(33)
+            ->set_help_text( 'Title at GET IN CONTACT section' ),
+            Field::make( 'textarea', 'get_contact_text'.carbon_lang_prefix(), 'Text' )
+            ->set_width(33)
+            ->set_help_text( 'Text at GET IN CONTACT section' ),
+            Field::make( 'text', 'get_contact_title_form'.carbon_lang_prefix(), 'Title of the form' )
+            ->set_width(33)
+            ->set_help_text( 'Title of the form at GET IN CONTACT section' ),
+            Field::make( 'text', 'get_contact_step_01_title'.carbon_lang_prefix(), 'Step-01 title' )
+            ->set_width(50)
+            ->set_help_text( 'Title of first step at GET IN CONTACT section' ),
+            Field::make( 'text', 'get_contact_step_01_text'.carbon_lang_prefix(), 'Step-01 text' )
+            ->set_width(50)
+            ->set_help_text( 'Text at first step at GET IN CONTACT section' ),
+            Field::make( 'text', 'get_contact_step_02_title'.carbon_lang_prefix(), 'Step-02 title' )
+            ->set_width(50)
+            ->set_help_text( 'Title of first step at GET IN CONTACT section' ),
+            Field::make( 'text', 'get_contact_step_02_text'.carbon_lang_prefix(), 'Step-02 text' )
+            ->set_width(50)
+            ->set_help_text( 'Text at first step at GET IN CONTACT section' ),
+            Field::make( 'text', 'get_contact_step_03_title'.carbon_lang_prefix(), 'Step-03 title' )
+            ->set_width(50)
+            ->set_help_text( 'Title of first step at GET IN CONTACT section' ),
+            Field::make( 'text', 'get_contact_step_03_text'.carbon_lang_prefix(), 'Step-03 text' )
+            ->set_width(50)
+            ->set_help_text( 'Text at first step at GET IN CONTACT section' ),
+            ) 
+        );

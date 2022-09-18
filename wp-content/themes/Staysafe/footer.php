@@ -45,7 +45,7 @@
 					</div>
 					<?php endif; ?>
 					<ul class="footer-body-socials">
-					<?php if ($GLOBALS['stay_safe']['facebook']) : ?>
+						<?php if ($GLOBALS['stay_safe']['facebook']) : ?>
 						<li class="footer-body-socials__item">
 							<a href="<?php echo $GLOBALS['stay_safe']['facebook']; ?>" target="_blank" class="footer-body-socials__link icon-facebook"></a>
 						</li>
