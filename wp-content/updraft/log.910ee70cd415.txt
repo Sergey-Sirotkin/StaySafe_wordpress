@@ -1,0 +1,295 @@
+0000.001 (0) Opened log file at time: Sun, 18 Sep 2022 16:13:43 +0000 on http://staysafe
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.22 WP: 6.0.2 PHP: 8.0.18 (apache2handler, Windows NT SERHAN 6.2 build 9200 (Windows 8 Professional Edition) AMD64) MySQL: 8.0.29 (max packet size=67108864) WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 1536M (used: 44.2M | 46M) multisite: N openssl: OpenSSL 1.1.1n  15 Mar 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.004 (0) Free space on disk containing Updraft's temporary directory: 42726.6 MB
+0000.006 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.012 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.016 (0) Set semaphore last lock (fd) time to 2022-09-18 16:13:43
+0000.017 (0) Semaphore lock (fd) complete
+0000.022 (0) Backup run: resumption=0, nonce=910ee70cd415, file_nonce=910ee70cd415 begun at=1663517623 (0s ago), job type=backup
+0000.024 (0) Scheduling a resumption (1) after 300 seconds (1663517923) in case this run gets aborted
+0000.043 (0) Checking if we have a zip executable available
+0000.046 (0) Creation of backups of directories: beginning
+0000.051 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.620 (0) Total entities for the zip file: 333 directories, 2103 files (0 skipped as non-modified), 28 MB
+0000.646 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.670 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.693 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.716 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.740 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.764 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.788 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.812 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.836 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.860 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.862 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (20.3 MB, 2103 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0003.393 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 1100 files added (on-disk size: 6302.9 KB)
+0003.420 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 1200 files added (on-disk size: 6302.9 KB)
+0003.449 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 1300 files added (on-disk size: 6302.9 KB)
+0003.478 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 1400 files added (on-disk size: 6302.9 KB)
+0003.507 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 1500 files added (on-disk size: 6302.9 KB)
+0003.535 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 1600 files added (on-disk size: 6302.9 KB)
+0003.563 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 1700 files added (on-disk size: 6302.9 KB)
+0003.588 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 1800 files added (on-disk size: 6302.9 KB)
+0003.617 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 1900 files added (on-disk size: 6302.9 KB)
+0003.646 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 2000 files added (on-disk size: 6302.9 KB)
+0003.648 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.9 MB, 2103 files batched, 1001 (2002) added so far); re-opening (prior size: 6302.9 KB)
+0007.964 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.tmp: 2100 files added (on-disk size: 8398.8 KB)
+0008.423 (0) Creating zip file manifest (backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.list-temp.tmp)
+0008.431 (0) Successfully created zip file manifest (size: 165847)
+0008.493 (0) Created plugins zip (0) - 8609.1 KB in 8.4 s (1020.5 KB/s) (sha1: b8283b45db941be68c4759051f8619d28401c0a5, sha256: 6e0927feacebbf57465d4d99af09b1aaf0fbefa371a673ed0676e7e494e78058)
+0008.498 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0008.499 (0) No remote despatch: user chose no remote backup service
+0008.500 (0) Recording as successfully uploaded: backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip
+0008.502 (0) Deleting zip manifest (backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip.list.tmp)
+0008.504 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0008.505 (0) Number of backup sets in history: 2; groups (db): 1
+0008.506 (0) Examining (for databases) backup set with group_id=0, nonce=a26c88e4b86c, datestamp=1663503767 (Sep 18 2022 12:22:47)
+0008.507 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0008.508 (0) Examining (for databases) backup set with group_id=0, nonce=82b1ef05ee12, datestamp=1663431547 (Sep 17 2022 16:19:07)
+0008.508 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0008.508 (0) Number of backup sets in history: 2; groups (files): 1
+0008.508 (0) Examining (for files) backup set with nonce=a26c88e4b86c, datestamp=1663503767 (Sep 18 2022 12:22:47)
+0008.508 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0008.509 (0) Examining (for files) backup set with nonce=82b1ef05ee12, datestamp=1663431547 (Sep 17 2022 16:19:07)
+0008.509 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0008.509 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0008.515 (0) Beginning creation of dump of themes (split every: 400 MB)
+0008.826 (0) Total entities for the zip file: 257 directories, 1027 files (0 skipped as non-modified), 30.1 MB
+0008.856 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0008.884 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0008.909 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0008.934 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0008.961 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0008.987 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0009.013 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0009.039 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip.tmp: 800 files added (on-disk size: 0 KB)
+0009.066 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip.tmp: 900 files added (on-disk size: 0 KB)
+0009.070 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25.3 MB, 1027 files batched, 908 (908) added so far); re-opening (prior size: 0 KB)
+0011.489 (0) A useful amount of data was added after this amount of zip processing: 3.4 s (normalised: 3.4 s, rate: 7635.2 KB/s)
+0011.491 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.3878779411316, normalised_time=3.3528810682806, max_time=11.48937702179, data points known=1, old_max_bytes=26214400, new_max_bytes=53897609)
+0011.518 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip.tmp: 1000 files added (on-disk size: 16397.9 KB)
+0011.891 (0) Creating zip file manifest (backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip.list-temp.tmp)
+0011.896 (0) Successfully created zip file manifest (size: 103230)
+0012.039 (0) Created themes zip (0) - 21269.9 KB in 3.5 s (6044.5 KB/s) (sha1: 5078a1194cd436957d7e82f49aa856ddab7713ea, sha256: 1193aba5c7338236b26ee2a42d8b2ee6c0ae0ba21fb2dcb5593bd1b38d39641d)
+0012.043 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0012.044 (0) No remote despatch: user chose no remote backup service
+0012.045 (0) Recording as successfully uploaded: backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip
+0012.047 (0) Deleting zip manifest (backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip.list.tmp)
+0012.049 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0012.050 (0) Number of backup sets in history: 2; groups (db): 1
+0012.051 (0) Examining (for databases) backup set with group_id=0, nonce=a26c88e4b86c, datestamp=1663503767 (Sep 18 2022 12:22:47)
+0012.051 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0012.052 (0) Examining (for databases) backup set with group_id=0, nonce=82b1ef05ee12, datestamp=1663431547 (Sep 17 2022 16:19:07)
+0012.052 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0012.052 (0) Number of backup sets in history: 2; groups (files): 1
+0012.053 (0) Examining (for files) backup set with nonce=a26c88e4b86c, datestamp=1663503767 (Sep 18 2022 12:22:47)
+0012.053 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0012.054 (0) Examining (for files) backup set with nonce=82b1ef05ee12, datestamp=1663431547 (Sep 17 2022 16:19:07)
+0012.054 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0012.054 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0012.060 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0012.061 (0) Looking for candidates to backup in: W:\domains\staysafe/wp-content/uploads
+0012.062 (0) finding files: 2022: adding to list (1)
+0012.063 (0) finding files: wpcf7_uploads: adding to list (2)
+0012.064 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0012.097 (0) Total entities for the zip file: 3 directories, 133 files (0 skipped as non-modified), 14.4 MB
+0012.122 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0012.239 (0) Creating zip file manifest (backup_2022-09-18-1913_StaySafe_910ee70cd415-uploads.zip.list-temp.tmp)
+0012.242 (0) Successfully created zip file manifest (size: 5886)
+0012.344 (0) Created uploads zip (0) - 14805.1 KB in 0.3 s (53620.8 KB/s) (sha1: 59f8dff69993112259c0afe470d82fcad18f39f5, sha256: df2ec0b5f0651be47445d6c2c8aaab652dccd5caf89af9536e61edaea59b0985)
+0012.349 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0012.350 (0) No remote despatch: user chose no remote backup service
+0012.351 (0) Recording as successfully uploaded: backup_2022-09-18-1913_StaySafe_910ee70cd415-uploads.zip
+0012.353 (0) Deleting zip manifest (backup_2022-09-18-1913_StaySafe_910ee70cd415-uploads.zip.list.tmp)
+0012.355 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0012.356 (0) Number of backup sets in history: 2; groups (db): 1
+0012.357 (0) Examining (for databases) backup set with group_id=0, nonce=a26c88e4b86c, datestamp=1663503767 (Sep 18 2022 12:22:47)
+0012.358 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0012.359 (0) Examining (for databases) backup set with group_id=0, nonce=82b1ef05ee12, datestamp=1663431547 (Sep 17 2022 16:19:07)
+0012.359 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0012.359 (0) Number of backup sets in history: 2; groups (files): 1
+0012.360 (0) Examining (for files) backup set with nonce=a26c88e4b86c, datestamp=1663503767 (Sep 18 2022 12:22:47)
+0012.360 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0012.361 (0) Examining (for files) backup set with nonce=82b1ef05ee12, datestamp=1663431547 (Sep 17 2022 16:19:07)
+0012.361 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0012.361 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0012.368 (0) Beginning backup of other directories found in the content directory (index: 0)
+0012.369 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0012.370 (0) Looking for candidates to backup in: W:\domains\staysafe/wp-content
+0012.371 (0) finding files: cache: skipping: excluded by options
+0012.372 (0) finding files: index.php: adding to list (1)
+0012.373 (0) finding files: index.php-old: adding to list (2)
+0012.374 (0) finding files: index.php-old-old: adding to list (3)
+0012.374 (0) finding files: languages: adding to list (4)
+0012.375 (0) finding files: languages-old: adding to list (5)
+0012.377 (0) finding files: languages-old-old: adding to list (6)
+0012.378 (0) finding files: plugins: skipping: this is the plugins directory
+0012.379 (0) finding files: plugins-old: adding to list (7)
+0012.380 (0) finding files: plugins-old-old: adding to list (8)
+0012.381 (0) finding files: themes: skipping: this is the themes directory
+0012.383 (0) finding files: themes-old: adding to list (9)
+0012.384 (0) finding files: themes-old-old: adding to list (10)
+0012.385 (0) finding files: updraft: skipping: this is the updraft directory
+0012.387 (0) finding files: upgrade: skipping: excluded by options
+0012.388 (0) finding files: uploads: skipping: this is the uploads directory
+0012.389 (0) finding files: uploads-old: adding to list (11)
+0012.390 (0) finding files: uploads-old-old: adding to list (12)
+0012.450 (0) Total entities for the zip file: 15 directories, 233 files (0 skipped as non-modified), 10 MB
+0012.476 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-others.zip.tmp: 100 files added (on-disk size: 0 KB)
+0012.500 (0) Zip: backup_2022-09-18-1913_StaySafe_910ee70cd415-others.zip.tmp: 200 files added (on-disk size: 0 KB)
+0013.666 (0) Creating zip file manifest (backup_2022-09-18-1913_StaySafe_910ee70cd415-others.zip.list-temp.tmp)
+0013.669 (0) Successfully created zip file manifest (size: 14228)
+0013.692 (0) Created others zip (0) - 2581.6 KB in 1.3 s (1988.8 KB/s) (sha1: e238568986899e05b35815df73d18310e898ec71, sha256: 7d511aaa221c2aca6fb7e415b8e97e29f89e2ffa4fd349510fa1648c1750ae22)
+0013.698 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0013.699 (0) No remote despatch: user chose no remote backup service
+0013.701 (0) Recording as successfully uploaded: backup_2022-09-18-1913_StaySafe_910ee70cd415-others.zip
+0013.703 (0) Deleting zip manifest (backup_2022-09-18-1913_StaySafe_910ee70cd415-others.zip.list.tmp)
+0013.705 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0013.706 (0) Number of backup sets in history: 2; groups (db): 1
+0013.707 (0) Examining (for databases) backup set with group_id=0, nonce=a26c88e4b86c, datestamp=1663503767 (Sep 18 2022 12:22:47)
+0013.707 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0013.708 (0) Examining (for databases) backup set with group_id=0, nonce=82b1ef05ee12, datestamp=1663431547 (Sep 17 2022 16:19:07)
+0013.708 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0013.708 (0) Number of backup sets in history: 2; groups (files): 1
+0013.709 (0) Examining (for files) backup set with nonce=a26c88e4b86c, datestamp=1663503767 (Sep 18 2022 12:22:47)
+0013.709 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0013.710 (0) Examining (for files) backup set with nonce=82b1ef05ee12, datestamp=1663431547 (Sep 17 2022 16:19:07)
+0013.710 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0013.710 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0013.718 (0) Saving backup status to database (elements: 8)
+0013.721 (0) Beginning creation of database dump (WordPress DB)
+0013.722 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0013.740 (0) Table wp_options: Total expected rows (via COUNT): 328
+0013.741 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0013.806 (0) Table wp_options: Rows added in this batch (next record: 3122): 324 (uncompressed bytes in this segment=1632949) in 0.07 seconds
+0013.813 (0) Table wp_options: finishing file(s) (2, 402.6 KB)
+0013.818 (0) Table wp_users: Total expected rows (via COUNT): 1
+0013.819 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0013.822 (0) Table wp_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1513) in 0.01 seconds
+0013.827 (0) Table wp_users: finishing file(s) (2, 0.6 KB)
+0013.836 (0) Table wp_usermeta: Total expected rows (via COUNT): 30
+0013.837 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0013.839 (0) Table wp_usermeta: Rows added in this batch (next record: 33): 30 (uncompressed bytes in this segment=3903) in 0.01 seconds
+0013.844 (0) Table wp_usermeta: finishing file(s) (2, 1.6 KB)
+0013.850 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0013.852 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=721) in 0.00 seconds
+0013.857 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0013.861 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0013.862 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0013.864 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2320) in 0.00 seconds
+0013.869 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0013.873 (0) Table wp_links: Total expected rows (via COUNT): 0
+0013.875 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1496) in 0.00 seconds
+0013.879 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0013.890 (0) Table wp_postmeta: Total expected rows (approximate): 8326
+0013.945 (0) Table wp_postmeta: Rows added in this batch (next record: 145936): 9690 (uncompressed bytes in this segment=1070877) in 0.06 seconds
+0013.953 (0) Table wp_postmeta: finishing file(s) (2, 148 KB)
+0013.961 (0) Table wp_posts: Total expected rows (via COUNT): 332
+0013.962 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0013.972 (0) Table wp_posts: Rows added in this batch (next record: 364): 332 (uncompressed bytes in this segment=137419) in 0.01 seconds
+0013.978 (0) Table wp_posts: finishing file(s) (2, 16.3 KB)
+0013.982 (0) Table wp_term_relationships: Total expected rows (approximate): 32
+0013.985 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 41 (uncompressed bytes in this segment=1259) in 0.00 seconds
+0013.990 (0) Table wp_term_relationships: finishing file(s) (2, 0.5 KB)
+0013.996 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 18
+0013.997 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0014.000 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 22): 18 (uncompressed bytes in this segment=1899) in 0.01 seconds
+0014.007 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.7 KB)
+0014.013 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0014.015 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=694) in 0.00 seconds
+0014.024 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0014.029 (0) Table wp_terms: Total expected rows (via COUNT): 18
+0014.030 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0014.032 (0) Table wp_terms: Rows added in this batch (next record: 22): 18 (uncompressed bytes in this segment=1550) in 0.01 seconds
+0014.038 (0) Table wp_terms: finishing file(s) (2, 0.7 KB)
+0014.042 (0) Table wp_cfs_sessions: Total expected rows (approximate): 25
+0014.045 (0) Table wp_cfs_sessions: Rows added in this batch (next record: 1000): 26 (uncompressed bytes in this segment=7249) in 0.00 seconds
+0014.049 (0) Table wp_cfs_sessions: finishing file(s) (2, 1.2 KB)
+0014.055 (0) Table wp_cfs_values: Total expected rows (via COUNT): 60
+0014.057 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0014.059 (0) Table wp_cfs_values: Rows added in this batch (next record: 2395): 60 (uncompressed bytes in this segment=3170) in 0.01 seconds
+0014.064 (0) Table wp_cfs_values: finishing file(s) (2, 0.9 KB)
+0014.065 (0) PHP event: code E_WARNING: filemtime(): stat failed for W:\domains\staysafe/wp-content/updraft/backup_2022-09-18-1913_StaySafe_910ee70cd415-db.gz (line 1917, W:\domains\staysafe\wp-content\plugins\updraftplus\backup.php)
+0014.066 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_options.table.tmpr3123.gz (1/14/fopen): adding to final database dump
+0014.074 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_options.table.gz (2/14/fopen): adding to final database dump
+0014.076 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_users.table.tmpr2.gz (3/14/fopen): adding to final database dump
+0014.077 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_users.table.gz (4/14/fopen): adding to final database dump
+0014.078 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_usermeta.table.tmpr34.gz (5/14/fopen): adding to final database dump
+0014.079 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_usermeta.table.gz (6/14/fopen): adding to final database dump
+0014.081 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_commentmeta.table.tmpr0.gz (7/14/fopen): adding to final database dump
+0014.082 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_commentmeta.table.gz (8/14/fopen): adding to final database dump
+0014.083 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_comments.table.tmpr2.gz (9/14/fopen): adding to final database dump
+0014.085 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_comments.table.gz (10/14/fopen): adding to final database dump
+0014.086 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_links.table.tmpr0.gz (11/14/fopen): adding to final database dump
+0014.088 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_links.table.gz (12/14/fopen): adding to final database dump
+0014.089 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_postmeta.table.tmpr145937.gz (13/14/fopen): adding to final database dump
+0014.092 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_postmeta.table.gz (14/14/fopen): adding to final database dump
+0014.093 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_posts.table.tmpr365.gz (15/14/fopen): adding to final database dump
+0014.095 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_posts.table.gz (16/14/fopen): adding to final database dump
+0014.096 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_term_relationships.table.tmpr100001.gz (17/14/fopen): adding to final database dump
+0014.097 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_term_relationships.table.gz (18/14/fopen): adding to final database dump
+0014.098 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_term_taxonomy.table.tmpr23.gz (19/14/fopen): adding to final database dump
+0014.099 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_term_taxonomy.table.gz (20/14/fopen): adding to final database dump
+0014.100 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_termmeta.table.tmpr0.gz (21/14/fopen): adding to final database dump
+0014.101 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_termmeta.table.gz (22/14/fopen): adding to final database dump
+0014.103 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_terms.table.tmpr23.gz (23/14/fopen): adding to final database dump
+0014.104 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_terms.table.gz (24/14/fopen): adding to final database dump
+0014.105 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_cfs_sessions.table.tmpr1001.gz (25/14/fopen): adding to final database dump
+0014.106 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_cfs_sessions.table.gz (26/14/fopen): adding to final database dump
+0014.108 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_cfs_values.table.tmpr2396.gz (27/14/fopen): adding to final database dump
+0014.109 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db-table-wp_cfs_values.table.gz (28/14/fopen): adding to final database dump
+0014.113 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db.gz: finished writing out complete database file (575.4 KB)
+0014.124 (0) Total database tables backed up: 14 (backup_2022-09-18-1913_StaySafe_910ee70cd415-db.gz, size: 589338, sha1: 29154f928cefe8387c16a6305548250d0d30b9fa, sha256: 6db6cbe23aeb606ecf4b19e543e7eb15b3b8b6b89a7ac627bb184964abafa80d)
+0014.130 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-plugins.zip: plugins: This file has already been successfully uploaded
+0014.131 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-themes.zip: themes: This file has already been successfully uploaded
+0014.131 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-uploads.zip: uploads: This file has already been successfully uploaded
+0014.132 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-others.zip: others: This file has already been successfully uploaded
+0014.133 (0) backup_2022-09-18-1913_StaySafe_910ee70cd415-db.gz: db: This file has not yet been successfully uploaded: will queue
+0014.134 (0) Saving backup history. Total backup size: 46.7 MB
+0014.137 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0014.140 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0014.141 (0) No remote despatch: user chose no remote backup service
+0014.142 (0) Recording as successfully uploaded: backup_2022-09-18-1913_StaySafe_910ee70cd415-db.gz
+0014.145 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0014.146 (0) Number of backup sets in history: 3; groups (db): 1
+0014.147 (0) Examining (for databases) backup set with group_id=0, nonce=910ee70cd415, datestamp=1663517623 (Sep 18 2022 16:13:43)
+0014.147 (0) This backup set is the backup set just made, so will not be deleted.
+0014.147 (0) Examining (for databases) backup set with group_id=0, nonce=a26c88e4b86c, datestamp=1663503767 (Sep 18 2022 12:22:47)
+0014.147 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0014.148 (0) Examining (for databases) backup set with group_id=0, nonce=82b1ef05ee12, datestamp=1663431547 (Sep 17 2022 16:19:07)
+0014.148 (0) 1663431547: db: this set includes a database (backup_2022-09-17-1919_StaySafe_82b1ef05ee12-db.gz); db count is now 2
+0014.148 (0) 1663431547: db: over retain limit (2); will delete this database
+0014.148 (0) Delete file: backup_2022-09-17-1919_StaySafe_82b1ef05ee12-db.gz, service=none
+0014.149 (0) Deleting local copy (backup_2022-09-17-1919_StaySafe_82b1ef05ee12-db.gz)
+0014.151 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0014.152 (0) Number of backup sets in history: 3; groups (files): 1
+0014.153 (0) Examining (for files) backup set with nonce=910ee70cd415, datestamp=1663517623 (Sep 18 2022 16:13:43)
+0014.153 (0) This backup set is the backup set just made, so will not be deleted.
+0014.154 (0) This backup set is the backup set just made, so will not be deleted.
+0014.154 (0) This backup set is the backup set just made, so will not be deleted.
+0014.154 (0) This backup set is the backup set just made, so will not be deleted.
+0014.154 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0014.155 (0) Examining (for files) backup set with nonce=a26c88e4b86c, datestamp=1663503767 (Sep 18 2022 12:22:47)
+0014.155 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0014.155 (0) Examining (for files) backup set with nonce=82b1ef05ee12, datestamp=1663431547 (Sep 17 2022 16:19:07)
+0014.155 (0) plugins: over retain limit (2); will delete this file entity
+0014.155 (0) themes: over retain limit (2); will delete this file entity
+0014.155 (0) uploads: over retain limit (2); will delete this file entity
+0014.155 (0) others: over retain limit (2); will delete this file entity
+0014.155 (0) Delete file: backup_2022-09-17-1919_StaySafe_82b1ef05ee12-plugins.zip, service=none
+0014.156 (0) Deleting local copy (backup_2022-09-17-1919_StaySafe_82b1ef05ee12-plugins.zip)
+0014.157 (0) Delete file: backup_2022-09-17-1919_StaySafe_82b1ef05ee12-themes.zip, service=none
+0014.158 (0) Deleting local copy (backup_2022-09-17-1919_StaySafe_82b1ef05ee12-themes.zip)
+0014.159 (0) Delete file: backup_2022-09-17-1919_StaySafe_82b1ef05ee12-uploads.zip, service=none
+0014.161 (0) Deleting local copy (backup_2022-09-17-1919_StaySafe_82b1ef05ee12-uploads.zip)
+0014.162 (0) Delete file: backup_2022-09-17-1919_StaySafe_82b1ef05ee12-others.zip, service=none
+0014.163 (0) Deleting local copy (backup_2022-09-17-1919_StaySafe_82b1ef05ee12-others.zip)
+0014.165 (0) This backup set is now empty; will remove from history
+0014.166 (0) Deleting log file (log.82b1ef05ee12.txt)
+0014.167 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0014.171 (0) Resume backup (910ee70cd415, 0): finish run
+0014.174 (0) Decremented the semaphore (fd) by 1
+0014.176 (0) Semaphore (fd) unlocked
+0014.177 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0014.181 (0) No email will/can be sent - the user has not configured an email address.
+0014.182 (0) The backup apparently succeeded and is now complete
