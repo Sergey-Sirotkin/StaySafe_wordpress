@@ -41,6 +41,8 @@ Container::make( 'theme_options', __( 'Website settings' ) )
             ->set_help_text( 'Label of address at footer' ),
             Field::make( 'text', 'copy', 'Copyright' )
             ->set_help_text( 'Copyright text at foooter' ),
+            Field::make( 'text', 'contact_popup_title'.carbon_lang_prefix(), 'Title of contact form at popup' )
+            ->set_help_text( 'Title of all contact forms at popups' ),
         ) 
     )
     ->add_tab('OUR PARTNERS', array(

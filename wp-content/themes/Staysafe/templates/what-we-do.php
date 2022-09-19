@@ -90,4 +90,17 @@ Template Name: what-we-do
 			</section>
 			<?php endif; ?>
 		</main>
+		<div id="popup-form" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup__content_form">
+					<button data-close type="button" class="popup__close popup__close_form"></button>
+					<div class="popup-form">
+						<div class="contact-form contact-form-popup">
+							<h2 class="contact-form__title contact-form__title_popup"><?php echo carbon_get_theme_option('contact_popup_title'.carbon_lang_prefix()); ?></h2>
+							<form class="contact-form__form" action="#"><?php echo do_shortcode('[contact-form-7 id="21" title="Main contact form"]') ?></form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<?php get_footer() ?>
