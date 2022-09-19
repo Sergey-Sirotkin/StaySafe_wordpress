@@ -74,42 +74,6 @@
 				" />
 		</svg>
 	</div>
-	<div id="popup-actions-1" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content">
-				<button data-close type="button" class="popup__close">Закрыть</button>
-				<div class="popup__text">Я 1 попап
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="popup-actions-2" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content">
-				<button data-close type="button" class="popup__close">Закрыть</button>
-				<div class="popup__text">Я 2 попап
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="popup-actions-3" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content">
-				<button data-close type="button" class="popup__close">Закрыть</button>
-				<div class="popup__text">Я 3 попап
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="popup-form" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content">
-				<button data-close type="button" class="popup__close">Закрыть</button>
-				<div class="popup__text">Я 4 попап
-				</div>
-			</div>
-		</div>
-	</div>
     <?php wp_footer(); ?>
 </body>
 

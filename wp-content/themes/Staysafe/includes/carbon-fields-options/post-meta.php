@@ -172,6 +172,32 @@ Container::make( 'post_meta', __( 'Home page redactor' ) )
             ->set_help_text( 'Text on the buttons (at every item) at Our actions section' ),
             ) 
         )
+        ->add_tab('Popup-actions', array(
+            Field::make( 'complex', 'popup_actions', __( 'Item' ) )
+            ->set_help_text( 'Here you can add, remove and edit popping-up items at Our actions section (when clicking on View more button.
+                            You have to connect normal item and popping-up item by giving them same index' )
+                ->setup_labels([
+                    'plural_name' => 'popping-up item',
+                    'singular_name' => 'popping-up item',
+                ])
+                ->add_fields( array(
+                Field::make( 'text', 'popup_actions_id', __( 'Item index' ) )
+                ->set_help_text( 'Index number of Item from Our actions tab' ),
+                Field::make( 'text', 'popup_actions_subtitle'.carbon_lang_prefix(), __( 'Popup subtitle' ) )
+                ->set_help_text( 'Subtitle at popup' )
+                ->set_width(25),
+                Field::make( 'text', 'popup_actions_title'.carbon_lang_prefix(), __( 'Popup title' ) )
+                ->set_help_text( 'Title at popup' )
+                ->set_width(25),
+                Field::make( 'textarea', 'popup_actions_text'.carbon_lang_prefix(), __( 'Popup text' ) )
+                ->set_help_text( 'Text at popup (Do not delete "br" tag - this is a line breaker)' )
+                ->set_width(40),
+                Field::make( 'image', 'popup_actions_image'.carbon_lang_prefix(), __( 'Popup image' ) )
+                ->set_help_text( 'Image at popup' )
+                ->set_width(10),
+                ) ),
+            )
+        )
         ->add_tab('Photo reports', array(
             Field::make( 'text', 'photo_reports_title'.carbon_lang_prefix(), 'Title' )
             ->set_help_text( 'Title at Photo reports section' ),

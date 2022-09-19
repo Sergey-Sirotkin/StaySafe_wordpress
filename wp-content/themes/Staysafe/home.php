@@ -259,4 +259,29 @@ Template Name: home
 			</section>
 			<?php endif; ?>
 		</main>
+		<?php $popup_actions_items = carbon_get_the_post_meta('popup_actions');?>
+		<?php if ($popup_actions_items) : ?>
+		<?php foreach ($popup_actions_items as $popup_actions_item) : ?>
+		<div id="popup-actions-<?php echo $popup_actions_item['popup_actions_id']?>" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"></button>
+					<div class="popup-actions">
+						<div class="popup-actions__image">
+							<img src="<?php echo wp_get_attachment_image_url( $popup_actions_item[ 'popup_actions_image'.$lang_prefix], 'full' ); ?>" alt="actions-image">
+						</div>
+						<div class="popup-actions__body">
+							<p class="popup-actions__subtitle"><?php echo $popup_actions_item['popup_actions_subtitle'.$lang_prefix]?></p>
+							<h2 class="popup-actions__title"><?php echo $popup_actions_item['popup_actions_title'.$lang_prefix]?></h2>
+							<div class="popup-actions__text">
+								<p><?php echo $popup_actions_item['popup_actions_text'.$lang_prefix]?></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php endforeach; ?>
+		<?php endif; ?>
+	</div>
 <?php get_footer() ?>
