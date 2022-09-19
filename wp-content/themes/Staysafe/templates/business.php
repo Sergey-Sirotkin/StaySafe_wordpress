@@ -122,25 +122,7 @@ Template Name: business
 						<div class="contact-form contact-form-business">
 							<h2 class="contact-form__title title contact-form-title-business"><?php echo carbon_get_post_meta( $page_id, 'get_contact_title_form'.$lang_prefix); ?></h2>
 							<form class="contact-form__form" action="#">
-								<ul class="contact-form__list">
-									<li class="contact-form__item">
-										<label class="contact-form__label" for="name">Name<span>*</span></label>
-										<input required id="name" type="text" class="contact-form__input">
-									</li>
-									<li class="contact-form__item">
-										<label class="contact-form__label" for="email">E-mail<span>*</span></label>
-										<input required id="email" type="email" class="contact-form__input">
-									</li>
-									<li class="contact-form__item">
-										<label class="contact-form__label" for="phone">Phone</label>
-										<input id="phone" type="tel" class="contact-form__input">
-									</li>
-									<li class="contact-form__item">
-										<label class="contact-form__label" for="message">Your message to us</label>
-										<textarea class="contact-form__textarea" id="message"></textarea>
-									</li>
-								</ul>
-								<button type="submit" class="contact-form__button btn">Submit</button>
+								<?php echo do_shortcode('[contact-form-7 id="21" title="Main contact form"]') ?>
 							</form>
 						</div>
 						<ul class="get-contact__socials">
