@@ -777,6 +777,97 @@ body::after {
   padding: 2.4375rem 3.5rem;
 }
 
+.popup-content-success {
+  background-color: #FFFFFF;
+  border-radius: 0.3125rem;
+  max-width: 31.25rem;
+  padding: 5.5rem 6.4375rem 3.3125rem 6.4375rem;
+}
+
+@supports (min-height: clamp( 25rem , 22.8260869565rem  +  10.8695652174vw , 31.25rem )) {
+  .popup-content-success {
+    min-height: clamp( 25rem , 22.8260869565rem  +  10.8695652174vw , 31.25rem );
+  }
+}
+
+@supports not (min-height: clamp( 25rem , 22.8260869565rem  +  10.8695652174vw , 31.25rem )) {
+  .popup-content-success {
+    min-height: calc(25rem + 6.25 * (100vw - 20rem) / 57.5);
+  }
+}
+
+.popup-close-success::after,
+.popup-close-success::before {
+  background-color: #595959;
+}
+
+.popup-success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup-success__image {
+  margin-bottom: 1.4375rem;
+  width: 4.1875rem;
+  height: 4.1875rem;
+}
+
+.popup-success__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.popup-success__text {
+  text-align: center;
+  max-width: 18.125rem;
+  color: #232420;
+  font-weight: 700;
+  line-height: 1.2222222222;
+  text-transform: uppercase;
+}
+
+@supports (font-size: clamp( 1.75rem , 1.5760869565rem  +  0.8695652174vw , 2.25rem )) {
+  .popup-success__text {
+    font-size: clamp( 1.75rem , 1.5760869565rem  +  0.8695652174vw , 2.25rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.75rem , 1.5760869565rem  +  0.8695652174vw , 2.25rem )) {
+  .popup-success__text {
+    font-size: calc(1.75rem + 0.5 * (100vw - 20rem) / 57.5);
+  }
+}
+
+.wpcf7-response-output {
+  display: none;
+}
+
+.wpcf7-not-valid-tip {
+  padding-top: 0.3125rem;
+}
+
+.wpcf7-spinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.625rem auto 0 auto;
+}
+
+.wpcf7 input[type=submit] {
+  -webkit-border-radius: 0.125rem !important;
+  -webkit-appearance: none !important;
+}
+
 .scroll-up {
   position: fixed;
   right: 1.5625rem;
@@ -1281,10 +1372,6 @@ body::after {
 
 .hero {
   padding-bottom: 6.625rem;
-  background-image: url("../img/home/01.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
 }
 
 @supports (padding-top: clamp( 5rem , 2rem  +  15vw , 13.625rem )) {

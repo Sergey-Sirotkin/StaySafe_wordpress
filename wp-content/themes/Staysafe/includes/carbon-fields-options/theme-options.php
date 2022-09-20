@@ -43,6 +43,10 @@ Container::make( 'theme_options', __( 'Website settings' ) )
             ->set_help_text( 'Copyright text at foooter' ),
             Field::make( 'text', 'contact_popup_title'.carbon_lang_prefix(), 'Title of contact form at popup' )
             ->set_help_text( 'Title of all contact forms at popups' ),
+            Field::make( 'textarea', 'popup_success_text'.carbon_lang_prefix(), 'Text after successful form submission' )
+            ->set_width(50),
+            Field::make( 'textarea', 'popup_fail_text'.carbon_lang_prefix(), 'Text after an unsuccessful form submission' )
+            ->set_width(50),
         ) 
     )
     ->add_tab('OUR PARTNERS', array(

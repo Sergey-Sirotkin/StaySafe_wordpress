@@ -11,6 +11,8 @@ Container::make( 'post_meta', __( 'Home page redactor' ) )
 ->show_on_template('home.php')
 
         ->add_tab('Main screen', array(
+            Field::make( 'image', 'main_img', 'Background image' )
+            ->set_help_text( 'Background image at main screen' ),
             Field::make( 'text', 'main_title'.carbon_lang_prefix(), 'Title' )
             ->set_width(50)
             ->set_help_text( 'Title at main screen (Do not delete "br" tag - this is a line breaker)' ),

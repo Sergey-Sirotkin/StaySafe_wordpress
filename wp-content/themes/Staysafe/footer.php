@@ -65,6 +65,32 @@
 			</div>
 		</footer>
 	</div>
+	<div id="popup-form-success" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup-content-success">
+				<button data-close type="button" class="popup__close popup-close-success"></button>
+				<div class="popup-success">
+					<div class="popup-success__image">
+						<img src="<?php bloginfo('template_url') ?>/assets/img/success.png" alt="success">
+					</div>
+					<p class="popup-success__text"><?php echo carbon_get_theme_option('popup_success_text'.carbon_lang_prefix()) ?></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-form-fail" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup-content-success">
+				<button data-close type="button" class="popup__close popup-close-success"></button>
+				<div class="popup-success">
+					<div class="popup-success__image">
+						<img src="<?php bloginfo('template_url') ?>/assets/img/fail.png" alt="success">
+					</div>
+					<p class="popup-success__text"><?php echo carbon_get_theme_option('popup_fail_text'.carbon_lang_prefix()) ?></p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="scroll-up">
 		<svg class="scroll-up__svg" viewBox="-2 -2 52 52">
 			<path class="scroll-up__svg-path" d="

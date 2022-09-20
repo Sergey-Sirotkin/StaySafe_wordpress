@@ -7,7 +7,7 @@ Template Name: home
 <?php $lang_prefix = carbon_lang_prefix(); ?>
 <?php get_header() ?>
 		<main class="page">
-			<section class="hero">
+			<section class="hero" style="background-image: url('<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'main_img'), 'full'); ?>');background-repeat: no-repeat;background-position: 50% 50%;background-size: cover;">
 				<div class="hero__container">
 					<div class="hero-body">
 						<h1 class="hero-body__title"><?php echo carbon_get_post_meta( $page_id, 'main_title'.$lang_prefix); ?></h1>
@@ -120,9 +120,7 @@ Template Name: home
 							<img src="<?php bloginfo('template_url') ?>/assets/img/decor-01.png" alt="decor">
 						</div>
 						<p class="contact-form__text"><?php echo carbon_get_post_meta( $page_id, 'contact_subtitle'.$lang_prefix); ?></p>
-						<form class="contact-form__form" action="#">
 						<?php echo do_shortcode('[contact-form-7 id="21" title="Main contact form"]') ?>
-						</form>
 					</div>
 					<div class="contact-body">
 						<div class="contact-body__inner">

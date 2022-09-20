@@ -4028,6 +4028,12 @@
             behavior: "smooth"
         });
     }));
+    document.addEventListener("wpcf7mailsent", (function(event) {
+        modules_flsModules.popup.open("#popup-form-success");
+    }), false);
+    document.addEventListener("wpcf7mailfailed", (function(event) {
+        modules_flsModules.popup.open("#popup-form-fail");
+    }), false);
     window["FLS"] = true;
     isWebp();
     menuInit();
